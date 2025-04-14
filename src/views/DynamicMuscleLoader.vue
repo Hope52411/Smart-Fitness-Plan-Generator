@@ -2,7 +2,7 @@
   <div>
     <!-- ✅ 调试信息展示 -->
     <div v-if="!AsyncComponent" style="color: red; text-align: center; margin-top: 60px;">
-      ❌ 页面未找到：{{ part }}
+      ❌ page cannot be found: {{ part }}
     </div>
 
     <!-- ✅ 正常加载组件 -->
@@ -42,18 +42,22 @@ export default {
     };
   },
   created() {
-    console.log('✅ 收到路由参数 part：', this.part);
-    const loader = muscleComponents[this.part];
-    if (loader) {
-      // 异步加载对应组件
-      loader().then(module => {
+  console.log('✅ part from props:', this.part);
+  console.log('✅ loader available keys:', Object.keys(muscleComponents));
+
+  const loader = muscleComponents[this.part];
+  if (loader) {
+    loader()
+      .then(module => {
         this.AsyncComponent = module.default || module;
-      }).catch(err => {
-        console.error('❌ 加载 muscle 页面失败:', err);
+        console.log('✅ Component loaded successfully');
+      })
+      .catch(err => {
+        console.error('❌ Failed to load component:', err);
       });
-    } else {
-      console.warn('⚠️ 未找到匹配页面组件:', this.part);
-    }
+  } else {
+    console.warn('⚠️ No loader found for part:', this.part);
   }
+}
 };
 </script>

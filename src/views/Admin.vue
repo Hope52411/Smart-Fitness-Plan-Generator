@@ -1,6 +1,5 @@
 <template>
   <div id="bgimg">
-    <h1>Welcome to the Admin homepage</h1>
     <button class="logout-button" @click="logout">Log Out</button>
     <div class="container">
       <div class="search-bar">

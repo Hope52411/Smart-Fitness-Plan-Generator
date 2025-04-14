@@ -1,56 +1,52 @@
 <template>
   <div id="bgimg">
-    <el-form ref="ruleForm" :model="ruleForm" :rules="rules" class="register-container" label-position="left" label-width="0px">
+    <el-form ref="ruleForm" :model="ruleForm" :rules="rules" class="register-container" label-position="left"
+      label-width="0px">
 
-        <h3 class="register_title">Register</h3>
+      <h3 class="register_title">Register</h3>
 
-        <el-form-item prop="loginName">
-          <el-input v-model="ruleForm.loginName" autocomplete="off" placeholder="Username">
-            <template #prefix>
-              <i class="el-icon-user"></i>
-            </template>
-          </el-input>
-        </el-form-item>
+      <el-form-item prop="loginName">
+        <el-input v-model="ruleForm.loginName" autocomplete="off" placeholder="Username">
+          <template #prefix>
+            <i class="el-icon-user"></i>
+          </template>
+        </el-input>
+      </el-form-item>
 
-        <el-form-item prop="email">
-          <el-input v-model="ruleForm.email" type="email" autocomplete="off" placeholder="Email">
-            <template #prefix>
-              <i class="el-icon-message"></i>
-            </template>
-          </el-input>
-        </el-form-item>
+      <el-form-item prop="email">
+        <el-input v-model="ruleForm.email" type="email" autocomplete="off" placeholder="Email">
+          <template #prefix>
+            <i class="el-icon-message"></i>
+          </template>
+        </el-input>
+      </el-form-item>
 
-        <el-form-item prop="password">
-          <el-input type="password" v-model="ruleForm.password" autocomplete="off" placeholder="Password">
-            <template #prefix>
-              <i class="el-icon-lock"></i>
-            </template>
-          </el-input>
-        </el-form-item>
+      <el-form-item prop="password">
+        <el-input type="password" v-model="ruleForm.password" autocomplete="off" placeholder="Password">
+          <template #prefix>
+            <i class="el-icon-lock"></i>
+          </template>
+        </el-input>
+      </el-form-item>
 
-        <el-form-item prop="checkPass">
-          <el-input
-            type="password"
-            v-model="ruleForm.checkPass"
-            autocomplete="off"
-            placeholder="Confirm Password"
-          >
-            <template #prefix>
-              <i class="el-icon-lock"></i>
-            </template>
-          </el-input>
-        </el-form-item>
+      <el-form-item prop="checkPass">
+        <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off" placeholder="Confirm Password">
+          <template #prefix>
+            <i class="el-icon-lock"></i>
+          </template>
+        </el-input>
+      </el-form-item>
 
-        <el-form-item style="width: 100%;">
-          <el-button class="register-btn" type="primary" @click="submitForm">Register</el-button>
+      <el-form-item style="width: 100%;">
+        <el-button class="register-btn" type="primary" @click="submitForm">Register</el-button>
 
-        </el-form-item>
+      </el-form-item>
 
-        <div class="register-footer">
-          <el-button type="text" @click="toLogin()">Already have an account? Login</el-button>
-        </div>
-      </el-form>
-    </div>
+      <div class="register-footer">
+        <el-button type="text" @click="toLogin">Already have an account? Login</el-button>
+      </div>
+    </el-form>
+  </div>
 </template>
 
 <script>
@@ -92,30 +88,30 @@ export default {
   },
   methods: {
     submitForm() {
-  if (!this.$refs.ruleForm) {
-    console.error("ruleForm is undefined!");
-    return;
-  }
+      if (!this.$refs.ruleForm) {
+        console.error("ruleForm is undefined!");
+        return;
+      }
 
-  this.$refs.ruleForm.validate((valid) => {
-    if (valid) {
-      this.axios.post("http://localhost:3231/sys-user/register", this.ruleForm)
-        .then((resp) => {
-          let data = resp.data;
-          if (data.success) {
-            this.$message({ message: "Registration successful!", type: "success" });
-            this.$refs.ruleForm.resetFields(); // 清空表单
-          } else {
-            this.$message({ message: "The username is already taken, please try again", type: "error" });
-          }
-        })
-        .catch(() => {
-          this.$message({ message: "Registration failed, please check your input", type: "error" });
-        });
+      this.$refs.ruleForm.validate((valid) => {
+        if (valid) {
+          this.axios.post("http://localhost:3231/sys-user/register", this.ruleForm)
+            .then((resp) => {
+              let data = resp.data;
+              if (data.success) {
+                this.$message({ message: "Registration successful!", type: "success" });
+                this.$refs.ruleForm.resetFields(); // 清空表单
+              } else {
+                this.$message({ message: "The username is already taken, please try again", type: "error" });
+              }
+            })
+            .catch(() => {
+              this.$message({ message: "Registration failed, please check your input", type: "error" });
+            });
+        }
+      });
     }
-  });
-}
-,
+    ,
     toLogin() {
       this.$router.push({ path: "/" });
     },
@@ -134,15 +130,15 @@ export default {
 }
 
 .register-container {
-    border-radius: 15px;
-    background-clip: padding-box;
-    margin: 90px auto;
-    width: 350px;
-    padding: 35px 35px 15px 35px;
-    background: #fff;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 0 25px #cac6c6;
-  }
+  border-radius: 15px;
+  background-clip: padding-box;
+  margin: 90px auto;
+  width: 350px;
+  padding: 35px 35px 15px 35px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 25px #cac6c6;
+}
 
 /* 标题样式 */
 .register_title {
@@ -188,12 +184,5 @@ export default {
   margin-top: 10px;
 }
 
-.register-footer .el-button {
-  color: #505458;
-  font-size: 14px;
-}
 
-.register-footer .el-button:hover {
-  color: #333;
-}
 </style>

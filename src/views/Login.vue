@@ -64,7 +64,7 @@ export default {
           // ✅ 存储登录用户信息
           sessionStorage.setItem("userRole", this.loginForm.loginName === "Admin" ? "Admin" : "User");
           sessionStorage.setItem("isAuthenticated", "true");
-          sessionStorage.setItem("loginName", this.loginForm.loginName); // 🔹 存储当前用户名
+          sessionStorage.setItem("loginName", this.loginForm.loginName); 
           
           console.log("✅ 登录成功，当前用户:", this.loginForm.loginName);
 
@@ -95,7 +95,7 @@ export default {
       this.$router.push({ path: "/Register" });
     },
     toForgotPassword() {
-      this.$router.push({ path: "/ForgotPassword" });
+      this.$router.push({ path: "/forgot-password" });
     },
   },
 };

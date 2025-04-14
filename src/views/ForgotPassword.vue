@@ -1,30 +1,31 @@
 <template>
-    <div id="bgimg">
-      <body id="poster">
-        <el-form class="login-container" label-position="left" label-width="0px">
-          <h3 class="login_title">Forgot Password</h3>
-          <el-form-item>
-            <el-input
-              type="email"
-              v-model="email"
-              autocomplete="off"
-              placeholder="Enter your registered email"
-              prefix-icon="el-icon-message"
-            ></el-input>
-          </el-form-item>
-          <el-form-item style="width: 100%;">
-            <el-button
-              type="primary"
-              style="width: 100%; background: #505458; border: none"
-              @click="sendResetEmail"
-            >Send Reset Link</el-button>
-          </el-form-item>
-          <el-button type="text" @click="backToLogin">Back to Login</el-button>
-          <p v-if="message" class="info-message">{{ message }}</p>
-        </el-form>
-      </body>
+  <div id="bgimg">
+    <div id="poster">
+      <el-form class="login-container" label-position="left" label-width="0px">
+        <h3 class="login_title">Forgot Password</h3>
+        <el-form-item>
+          <el-input
+            type="email"
+            v-model="email"
+            autocomplete="off"
+            placeholder="Enter your registered email"
+            prefix-icon="el-icon-message"
+          ></el-input>
+        </el-form-item>
+        <el-form-item style="width: 100%;">
+          <el-button
+            type="primary"
+            style="width: 100%; background: #505458; border: none"
+            @click="sendResetEmail"
+          >Send Reset Link</el-button>
+        </el-form-item>
+        <el-button type="text" @click="backToLogin">Back to Login</el-button>
+        <p v-if="message" class="info-message">{{ message }}</p>
+      </el-form>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script>
   import axios from "axios";
