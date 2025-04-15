@@ -40,7 +40,7 @@
     methods: {
       async sendResetEmail() {
         try {
-          const response = await axios.post("http://localhost:3231/auth/forgot-password", { email: this.email });
+          const response = await axios.post("https://api.hope52411.tech/auth/forgot-password", { email: this.email });
           this.message = "If this email is registered, you will receive a reset link.";
         } catch (error) {
           this.message = "Error sending reset email. Please try again.";

@@ -64,7 +64,7 @@ export default {
     async fetchFriends() {
       try {
         const currentUser = sessionStorage.getItem("loginName");
-        const response = await axios.get("http://localhost:3231/api/friends/list", {
+        const response = await axios.get("https://api.hope52411.tech/api/friends/list", {
           params: { userName: currentUser },
         });
         this.friendList = response.data || [];
@@ -77,7 +77,7 @@ export default {
       if (!this.searchQuery.trim()) return;
       try {
         const response = await axios.get(
-          `http://localhost:3231/sys-user/search?name=${encodeURIComponent(this.searchQuery)}`
+          `https://api.hope52411.tech/sys-user/search?name=${encodeURIComponent(this.searchQuery)}`
         );
         this.searchResults = response.data;
         this.message = this.searchResults.length ? "" : "❌ The user was not found";
@@ -93,7 +93,7 @@ export default {
         return;
       }
       try {
-        const res = await axios.post("http://localhost:3231/api/friends/add", {
+        const res = await axios.post("https://api.hope52411.tech/api/friends/add", {
           userName: currentUser,
           friendId: user.id,
         });

@@ -2,7 +2,7 @@
   "name": "login01",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hope52411.github.io/Smart-Fitness-Plan-Generator/",
+  "homepage": "https://api.hope52411.tech",
   "scripts": {
     "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",

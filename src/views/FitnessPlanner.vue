@@ -58,7 +58,7 @@ async sendMessage() {
   this.userMessage = "";
 
   try {
-    const response = await axios.post("http://localhost:3231/api/chat", {
+    const response = await axios.post("https://api.hope52411.tech/api/chat", {
       loginName: this.loginName,
       userMessage: tempMessage
     }, {
@@ -92,7 +92,7 @@ async sendMessage() {
     async loadChatHistory() {
       if (!this.loginName) return;
       try {
-        const url = `http://localhost:3231/api/chat/${encodeURIComponent(this.loginName)}`;
+        const url = `https://api.hope52411.tech/api/chat/${encodeURIComponent(this.loginName)}`;
         const response = await axios.get(url);
 
         this.messages = [];

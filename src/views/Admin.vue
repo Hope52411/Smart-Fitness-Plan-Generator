@@ -87,7 +87,7 @@ export default {
     },
     fetchData() {
       axios
-        .get('http://localhost:3231/sys-user/Admin')
+        .get('https://api.hope52411.tech/sys-user/Admin')
         .then((response) => {
           this.tableData = response.data.map((item) => {
             item.id = BigInt(item.id);
@@ -111,7 +111,7 @@ export default {
       })
         .then(() => {
           axios
-            .delete(`http://localhost:3231/sys-user/${row.id}`)
+            .delete(`https://api.hope52411.tech/sys-user/${row.id}`)
             .then(() => {
               const index = this.tableData.indexOf(row);
               if (index !== -1) {

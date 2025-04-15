@@ -58,7 +58,7 @@ export default {
         });
 
       this.$emit("user-logged-out");
-      window.location.href = "/";
+      window.location.href = "/Smart-Fitness-Plan-Generator/";
     },
   }
 };

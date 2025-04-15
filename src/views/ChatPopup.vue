@@ -47,7 +47,7 @@ export default {
   methods: {
     async fetchMessages() {
       try {
-        const res = await axios.get("http://localhost:3231/api/messages", {
+        const res = await axios.get("https://api.hope52411.tech/api/messages", {
           params: {
             sender: this.currentUser,
             receiverId: this.friendUsername, // ✅ 用 loginName 查
@@ -70,7 +70,7 @@ export default {
 
       console.log("🚀 正在发送消息:", newMsg);
       try {
-        await axios.post("http://localhost:3231/api/messages", newMsg);
+        await axios.post("https://api.hope52411.tech/api/messages", newMsg);
         console.log("✅ 消息发送成功");
         this.messages.push(newMsg);
         this.messageText = "";

@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.use(VueAxios , axios)
 
-axios.defaults.baseURL = 'http://localhost:3231'
+axios.defaults.baseURL = 'https://api.hope52411.tech'
 axios.defaults.withCredentials = true
 
 new Vue({

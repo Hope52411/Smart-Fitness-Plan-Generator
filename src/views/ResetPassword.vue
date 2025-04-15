@@ -64,7 +64,7 @@
         console.log("🔹 Sending reset request with token:", this.token); 
   
         try {
-          const response = await axios.post("http://localhost:3231/auth/reset-password", {
+          const response = await axios.post("https://api.hope52411.tech/auth/reset-password", {
             token: this.token,
             newPassword: this.newPassword,
           });

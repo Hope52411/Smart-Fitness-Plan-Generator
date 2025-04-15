@@ -95,7 +95,7 @@ export default {
 
       this.$refs.ruleForm.validate((valid) => {
         if (valid) {
-          this.axios.post("http://localhost:3231/sys-user/register", this.ruleForm)
+          this.axios.post("https://api.hope52411.tech/sys-user/register", this.ruleForm)
             .then((resp) => {
               let data = resp.data;
               if (data.success) {

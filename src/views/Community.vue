@@ -128,7 +128,7 @@
     methods: {
       async fetchPosts() {
         try {
-          const response = await axios.get("http://localhost:3231/api/posts", {
+          const response = await axios.get("https://api.hope52411.tech/api/posts", {
             params: { userName: this.userName }
           });
   
@@ -142,8 +142,8 @@
           }).map(post => ({
             ...post,
             uniqueKey: `post-${post.id}`,
-            images: post.images?.map(img => `http://localhost:3231${img}`) || [],
-            video: post.video ? `http://localhost:3231${post.video}` : null,
+            images: post.images?.map(img => `https://api.hope52411.tech${img}`) || [],
+            video: post.video ? `https://api.hope52411.tech${post.video}` : null,
             showComments: false,
             isLiked: Array.isArray(post.likedUsers) && post.likedUsers.includes(this.userName)
           }));
@@ -165,7 +165,7 @@
         for (const file of this.newPost.pendingImages) {
           const formData = new FormData();
           formData.append("file", file);
-          const res = await axios.post("http://localhost:3231/api/upload/image", formData);
+          const res = await axios.post("https://api.hope52411.tech/api/upload/image", formData);
           postData.images.push(res.data.url);
         }
   
@@ -173,14 +173,14 @@
         if (this.newPost.pendingVideo) {
           const formData = new FormData();
           formData.append("file", this.newPost.pendingVideo);
-          const res = await axios.post("http://localhost:3231/api/upload/video", formData);
+          const res = await axios.post("https://api.hope52411.tech/api/upload/video", formData);
           postData.video = res.data.url;
         }
   
-        const response = await axios.post("http://localhost:3231/api/posts", postData);
+        const response = await axios.post("https://api.hope52411.tech/api/posts", postData);
         const newPost = response.data;
-        newPost.images = newPost.images.map(img => `http://localhost:3231${img}`);
-        newPost.video = newPost.video ? `http://localhost:3231${newPost.video}` : null;
+        newPost.images = newPost.images.map(img => `https://api.hope52411.tech${img}`);
+        newPost.video = newPost.video ? `https://api.hope52411.tech${newPost.video}` : null;
   
         this.posts.unshift({
           ...newPost,
@@ -201,7 +201,7 @@
         };
       },
       async likePost(postId) {
-        const res = await axios.post(`http://localhost:3231/api/posts/${postId}/like`, {
+        const res = await axios.post(`https://api.hope52411.tech/api/posts/${postId}/like`, {
           userName: this.userName
         });
   
@@ -212,7 +212,7 @@
         }
       },
       async deletePost(id) {
-        const res = await axios.delete(`http://localhost:3231/api/posts/${id}`, {
+        const res = await axios.delete(`https://api.hope52411.tech/api/posts/${id}`, {
           params: { userName: this.userName }
         });
         if (res.status === 200) {
@@ -221,7 +221,7 @@
       },
       async addComment(postId) {
         if (!this.newComment.trim()) return;
-        const res = await axios.post(`http://localhost:3231/api/posts/${postId}/comments`, {
+        const res = await axios.post(`https://api.hope52411.tech/api/posts/${postId}/comments`, {
           content: this.newComment,
           userName: this.userName
         });
