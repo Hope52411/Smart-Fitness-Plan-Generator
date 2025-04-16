@@ -83,7 +83,7 @@ export default {
         });
 
       this.$emit("user-logged-out");
-      window.location.href = "/";
+      this.$router.push("/");
     },
     fetchData() {
       axios
