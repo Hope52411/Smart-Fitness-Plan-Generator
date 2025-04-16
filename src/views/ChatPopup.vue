@@ -29,7 +29,7 @@ export default {
     return {
       messageText: "",
       messages: [],
-      currentUser: sessionStorage.getItem("loginName"),
+      currentUser: localStorage.getItem("loginName"),
       dragging: false,
       popupPosition: { top: 100, left: window.innerWidth - 400 },
       offset: { x: 0, y: 0 },

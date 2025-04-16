@@ -130,8 +130,8 @@ const router = new VueRouter({
 
 // ✅ 路由守卫
 router.beforeEach((to, from, next) => {
-  const isAuthenticated = sessionStorage.getItem("isAuthenticated");
-  const userRole = sessionStorage.getItem("userRole");
+  const isAuthenticated = localStorage.getItem("isAuthenticated");
+  const userRole = localStorage.getItem("userRole");
 
   if (to.path === "/admin" && userRole !== "Admin") {
     next({ path: "/" });

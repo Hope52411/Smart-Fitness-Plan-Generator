@@ -110,7 +110,7 @@
     name: "Community",
     data() {
       return {
-        userName: sessionStorage.getItem("loginName"),
+        userName: localStorage.getItem("loginName"),
         posts: [],
         fullscreenImage: null,
         newComment: "",

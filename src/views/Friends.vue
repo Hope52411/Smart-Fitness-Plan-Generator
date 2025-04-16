@@ -63,7 +63,7 @@ export default {
     },
     async fetchFriends() {
       try {
-        const currentUser = sessionStorage.getItem("loginName");
+        const currentUser = localStorage.getItem("loginName");
         const response = await axios.get("https://api.hope52411.tech/api/friends/list", {
           params: { userName: currentUser },
         });
@@ -87,7 +87,7 @@ export default {
       }
     },
     async addFriend(user) {
-      const currentUser = sessionStorage.getItem("loginName");
+      const currentUser = localStorage.getItem("loginName");
       if (user.loginName === currentUser) {
         this.message = "⚠️ You cannot add yourself as a friend.";
         return;

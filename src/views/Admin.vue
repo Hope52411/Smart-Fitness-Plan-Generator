@@ -64,8 +64,8 @@ export default {
   },
   methods: {
     logout() {
-      sessionStorage.removeItem("authToken");
-      sessionStorage.clear();
+      localStorage.removeItem("authToken");
+      localStorage.clear();
 
       fetch('/api/logout', {
         method: 'POST',

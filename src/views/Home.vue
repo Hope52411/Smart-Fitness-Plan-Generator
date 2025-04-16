@@ -34,31 +34,33 @@ export default {
   name: 'Home',
   data() {
     return {
-      selectedPart: null 
+      selectedPart: null
     };
   },
   methods: {
     logout() {
-      sessionStorage.removeItem("authToken");
-      sessionStorage.clear();
+      // ✅ 清除 localStorage 中的登录状态信息
+      localStorage.clear();
 
+      // ✅ （可选）如果你用了 cookie-based session，也可以通知后端退出
       fetch('/api/logout', {
         method: 'POST',
-        credentials: 'include',
+        credentials: 'include', // 保持 cookie
       })
         .then(response => {
           if (response.ok) {
-            console.log("Successfully logged out");
+            console.log("✅ Successfully logged out");
           } else {
-            console.error("Failed to log out from the server");
+            console.error("❌ Failed to log out from the server");
           }
         })
         .catch(error => {
-          console.error("Logout error:", error);
+          console.error("❌ Logout error:", error);
         });
 
+      // ✅ 通知父组件 + 重定向回首页（登录页）
       this.$emit("user-logged-out");
-      window.location.href = "/Smart-Fitness-Plan-Generator/";
+      this.$router.push("/");
     },
   }
 };

@@ -56,15 +56,16 @@ export default {
           let data = resp.data;
           if (data.success) {
             // ✅ 存储登录用户信息
-            sessionStorage.setItem("userRole", this.loginForm.loginName === "Admin" ? "Admin" : "User");
-            sessionStorage.setItem("isAuthenticated", "true");
-            sessionStorage.setItem("loginName", this.loginForm.loginName);
+            localStorage.setItem("userRole", this.loginForm.loginName === "Admin" ? "Admin" : "User");
+            localStorage.setItem("isAuthenticated", "true");
+            localStorage.setItem("loginName", this.loginForm.loginName);
 
             console.log("✅ 登录成功，当前用户:", this.loginForm.loginName);
 
             this.$message({
               message: `Welcome to home page, ${this.loginForm.loginName}!`,
               type: "success",
+              duration: 1500
             });
 
             // ✅ 根据用户跳转到不同页面

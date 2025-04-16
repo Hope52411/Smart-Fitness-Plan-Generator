@@ -33,7 +33,7 @@ export default {
   name: 'FitnessPlanner',
   data() {
     return {
-      loginName: sessionStorage.getItem("loginName") || "",
+      loginName: localStorage.getItem("loginName") || "",
       userMessage: "",
       messages: []
     };
