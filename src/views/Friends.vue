@@ -129,7 +129,7 @@ export default {
   backdrop-filter: blur(10px);
   text-align: center;
   transition: all 0.3s ease;
-  max-height: 350px;    
+  max-height: 350px;
   overflow-y: auto;
   overflow-x: hidden;
 }
