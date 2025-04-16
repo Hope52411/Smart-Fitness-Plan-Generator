@@ -39,20 +39,20 @@ export default {
         { name: "Jiamu Zhang" }
       ],
       games: [
-        { 
-          name: "2048", 
-          description: "2048 is a simple and addictive number merging game where blocks of the same number are merged by sliding them to reach 2048.", 
-          rules: "Game Rules: Use the arrow keys to slide the tiles. When two tiles with the same number touch, they merge into one. The goal is to create a tile with the number 2048." 
+        {
+          name: "2048",
+          description: "2048 is a simple and addictive number merging game where blocks of the same number are merged by sliding them to reach 2048.",
+          rules: "Game Rules: Use the arrow keys to slide the tiles. When two tiles with the same number touch, they merge into one. The goal is to create a tile with the number 2048."
         },
-        { 
-          name: "Gluttonous Snake", 
-          description: "Snake is a classic casual game that controls a snake to eat food on the screen, making the snake grow longer and longer while avoiding bumping into walls and itself.", 
-          rules: "Game Rules: Use the arrow keys to control the direction of the snake. Eat the food that appears on the screen to grow longer. Avoid running into the walls or the snake's own body, as this will end the game." 
+        {
+          name: "Gluttonous Snake",
+          description: "Snake is a classic casual game that controls a snake to eat food on the screen, making the snake grow longer and longer while avoiding bumping into walls and itself.",
+          rules: "Game Rules: Use the arrow keys to control the direction of the snake. Eat the food that appears on the screen to grow longer. Avoid running into the walls or the snake's own body, as this will end the game."
         },
-        { 
-          name: "Gomoku", 
-          description: "Gomoku is a strategy board game in which players take turns placing black and white pieces on the board, and the first player to line up five pieces wins.", 
-          rules: "Game Rules: Players take turns placing a stone of their color (black or white) on an empty intersection of the board. The first player to get an unbroken row of five stones horizontally, vertically, or diagonally wins the game." 
+        {
+          name: "Gomoku",
+          description: "Gomoku is a strategy board game in which players take turns placing black and white pieces on the board, and the first player to line up five pieces wins.",
+          rules: "Game Rules: Players take turns placing a stone of their color (black or white) on an empty intersection of the board. The first player to get an unbroken row of five stones horizontally, vertically, or diagonally wins the game."
         }
       ]
     };
@@ -108,11 +108,15 @@ li:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.team-leader, .team-members, .games {
+.team-leader,
+.team-members,
+.games {
   margin-bottom: 20px;
 }
 
-.team-leader p, .team-members ul, .games ul {
+.team-leader p,
+.team-members ul,
+.games ul {
   background: #ecf0f1;
   padding: 15px;
   border: 1px solid #bdc3c7;
@@ -125,7 +129,8 @@ li:hover {
   text-align: center;
 }
 
-.team-members ul li, .games ul li {
+.team-members ul li,
+.games ul li {
   font-size: 16px;
 }
 
