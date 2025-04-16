@@ -431,12 +431,12 @@ export default {
   name: 'MuscleMap',
   data() {
     return {
-      selectedPart : null
+      selectedPart: null
     };
   },
   methods: {
     selectPart(part) {
-      this.selectedPart  = part;
+      this.selectedPart = part;
       this.$router.push(`/home/muscle/${part}`);
     }
   }
