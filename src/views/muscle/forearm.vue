@@ -2,7 +2,10 @@
   <div class="muscle-page">
     <h1>💪 Forearm </h1>
     <p class="intro">
-      The forearm is a crucial muscle group located between the elbow and the wrist. It contains both flexor and extensor muscles responsible for various movements such as wrist curls, finger flexion, grip strength, and rotational control of the forearm. Strong forearms not only enhance performance in weightlifting and sports but also help prevent injuries and improve daily functionality like lifting, typing, and carrying.
+      The forearm is a crucial muscle group located between the elbow and the wrist. It contains both flexor and
+      extensor muscles responsible for various movements such as wrist curls, finger flexion, grip strength, and
+      rotational control of the forearm. Strong forearms not only enhance performance in weightlifting and sports but
+      also help prevent injuries and improve daily functionality like lifting, typing, and carrying.
     </p>
 
     <div class="selectors">
