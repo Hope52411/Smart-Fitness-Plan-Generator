@@ -1,173 +1,174 @@
 <template>
-    <div class="tool-container">
-      <div class="tool-card">
-        <!-- 返回按钮 -->
-        <button class="back-button" @click="goBack">
-            <i class="fas fa-arrow-left"></i> Back to Tools
-          </button>
+  <div class="tool-container">
+    <div class="tool-card">
+      <!-- 返回按钮 -->
+      <button class="back-button" @click="goBack">
+        <i class="fas fa-arrow-left"></i> Back to Tools
+      </button>
 
-  
-        <h2 class="tool-title">BMI Calculator</h2>
-        <p class="tool-subtitle">Calculate your Body Mass Index</p>
-  
-        <div class="form-group">
-          <input type="number" v-model.number="weight" placeholder="Enter your weight (kg)" />
-          <input type="number" v-model.number="height" placeholder="Enter your height (cm)" />
-          <button @click="calculateBMI">Calculate</button>
 
-        </div>
-  
-        <div v-if="bmi" class="result-card">
-          <p class="result-text">Your BMI is:</p>
-          <p class="result-value">{{ bmi.toFixed(1) }}</p>
-          <p class="result-status">Status: <span>{{ category }}</span></p>
-        </div>
+      <h2 class="tool-title">BMI Calculator</h2>
+      <p class="tool-subtitle">Calculate your Body Mass Index</p>
+
+      <div class="form-group">
+        <input type="number" v-model.number="weight" placeholder="Enter your weight (kg)" />
+        <input type="number" v-model.number="height" placeholder="Enter your height (cm)" />
+        <button @click="calculateBMI">Calculate</button>
+
+      </div>
+
+      <div v-if="bmi" class="result-card">
+        <p class="result-text">Your BMI is:</p>
+        <p class="result-value">{{ bmi.toFixed(1) }}</p>
+        <p class="result-status">Status: <span>{{ category }}</span></p>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'BMICalculator',
-    data() {
-      return {
-        weight: null,
-        height: null,
-        bmi: null
-      };
-    },
-    computed: {
-      category() {
-        if (!this.bmi) return '';
-        if (this.bmi < 18.5) return 'Underweight';
-        if (this.bmi < 25) return 'Normal';
-        if (this.bmi < 30) return 'Overweight';
-        return 'Obese';
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'BMICalculator',
+  data() {
+    return {
+      weight: null,
+      height: null,
+      bmi: null
+    };
+  },
+  computed: {
+    category() {
+      if (!this.bmi) return '';
+      if (this.bmi < 18.5) return 'Underweight';
+      if (this.bmi < 25) return 'Normal';
+      if (this.bmi < 30) return 'Overweight';
+      return 'Obese';
+    }
+  },
+  methods: {
+    calculateBMI() {
+      if (this.weight && this.height) {
+        const heightInMeters = this.height / 100;
+        this.bmi = this.weight / (heightInMeters * heightInMeters);
       }
     },
-    methods: {
-      calculateBMI() {
-        if (this.weight && this.height) {
-          const heightInMeters = this.height / 100;
-          this.bmi = this.weight / (heightInMeters * heightInMeters);
-        }
-      },
-      goBack() {
-        this.$router.push('/home/tools');
-      }
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .tool-container {
-    display: flex;
-    justify-content: center;
-    padding: 80px 20px;
-  }
-  
-  .tool-card {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    max-width: 450px;
-    width: 100%;
-    padding: 40px 30px;
-    text-align: center;
-    animation: fadeIn 0.6s ease-out;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    goBack() {
+      this.$router.push('/home/tools');
     }
   }
-  
-  .tool-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .tool-subtitle {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 30px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 30px;
-  }
-  
-  input {
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    outline: none;
-    transition: 0.3s;
-  }
-  
-  input:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
-  }
-  
-  button {
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  button:hover {
-    transform: scale(1.05);
-  }
-  
-  .result-card {
-    background: #f7f7f7;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .result-text {
-    font-size: 1rem;
-    color: #444;
-  }
-  
-  .result-value {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #667eea;
-    margin: 10px 0;
-  }
-  
-  .result-status {
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
-  .result-status span {
-    font-weight: bold;
-    color: #764ba2;
+};
+</script>
+
+<style scoped>
+.tool-container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.tool-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
 
-  .back-button {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tool-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tool-subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.result-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.result-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+.result-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin: 10px 0;
+}
+
+.result-status {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.result-status span {
+  font-weight: bold;
+  color: #764ba2;
+}
+
+.back-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -181,14 +182,13 @@
   cursor: pointer;
   transition: all 0.25s ease;
   box-shadow: 0 4px 10px rgba(102, 126, 234, 0.1);
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .back-button:hover {
   background: linear-gradient(45deg, #d4defc, #e6ecff);
   transform: translateX(-2px);
   color: #2f3ab2;
-  text-decoration: none; 
+  text-decoration: none;
 }
-  </style>
-  
+</style>
