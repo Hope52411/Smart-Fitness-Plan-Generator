@@ -14,7 +14,6 @@
 const muscleComponents = {
   'back-calves': () => import('@/views/muscle/back-calves.vue'),
   'back-thigh': () => import('@/views/muscle/back-thigh.vue'),
-  'back-traps': () => import('@/views/muscle/back-traps.vue'),
   'belly-side': () => import('@/views/muscle/belly-side.vue'),
   'belly': () => import('@/views/muscle/belly.vue'),
   'chest': () => import('@/views/muscle/chest.vue'),
@@ -23,7 +22,7 @@ const muscleComponents = {
   'front-calves': () => import('@/views/muscle/front-calves.vue'),
   'forearm': () => import('@/views/muscle/forearm.vue'),
   'front-thigh': () => import('@/views/muscle/front-thigh.vue'),
-  'front-traps': () => import('@/views/muscle/front-traps.vue'),
+  'traps': () => import('@/views/muscle/traps.vue'),
   'glutes': () => import('@/views/muscle/glutes.vue'),
   'hands': () => import('@/views/muscle/hands.vue'),
   'lats': () => import('@/views/muscle/lats.vue'),

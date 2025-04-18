@@ -1,10 +1,10 @@
 <template>
     <div class="muscle-page">
-        <h1>💪 Biceps</h1>
+        <h1>🏋️ Front Traps</h1>
         <p class="intro">
-            The biceps are the prominent muscles located at the front of your upper arms. Responsible for elbow flexion
-            and forearm rotation, strong biceps not only improve arm aesthetics but also contribute to pulling strength
-            and daily activities like lifting, carrying, and pulling.
+            The front part of the trapezius, also known as the upper traps, plays a crucial role in shoulder elevation,
+            neck support, and posture alignment. Strengthening this muscle improves stability in pressing movements and
+            prevents neck and shoulder strain during lifting or carrying tasks.
         </p>
 
         <div class="selectors">
@@ -65,95 +65,84 @@ export default {
                 Dumbbell: {
                     Male: [
                         {
-                            name: 'Dumbbell Bicep Curl',
-                            description: 'Stand upright, curl dumbbells with supinated grip to isolate biceps.',
-                            gif: 'https://hips.hearstapps.com/hmg-prod/images/workouts/2016/03/dumbbellcurl-1457043876.gif'
+                            name: 'Dumbbell Shrugs',
+                            description: 'Lift shoulders straight up while holding dumbbells to target upper traps.',
+                            gif: 'https://i.pinimg.com/originals/36/1d/5c/361d5cc869dfda52383556ef9cab1934.gif'
                         },
                         {
-                            name: 'Hammer Curl',
-                            description: 'Neutral grip dumbbell curl to target brachialis and biceps.',
-                            gif: 'https://hips.hearstapps.com/hmg-prod/images/workouts/2016/03/hammercurl-1456956209.gif'
+                            name: "Dumbbell Farmer's Carry",
+                            description: 'Walk with heavy dumbbells to build trap and grip strength.',
+                            gif: 'https://barbend.com/wp-content/uploads/2024/02/farmers-carry-with-dumbbells-barbend-movement-gif-masters.gif'
                         }
                     ],
                     Female: [
                         {
-                            name: 'Seated Dumbbell Curl',
-                            description: 'Seated version for more isolation and less momentum.',
-                            gif: 'https://149874912.v2.pressablecdn.com/wp-content/uploads/2020/10/Incline-Dumbbell-Curl.gif'
-                        },
-                        {
-                            name: 'Alternate Dumbbell Curl',
-                            description: 'Curl each arm alternately to improve control and form.',
-                            gif: 'https://www.anytimefitness.com/wp-content/uploads/2023/03/Anytime-Fitness-ArmDay-ReciprocatingBicepCurls.gif'
+                            name: 'Light Dumbbell Shrug',
+                            description: 'Controlled shrug to improve posture and trap tension.',
+                            gif: 'https://global-uploads.webflow.com/5d1d0d3f53ced35a29dbe169/5e4bf302ebbd887a08b94be0_speed-front-shrugs-dumbbells-exercise-anabolic-aliens.gif'
                         }
                     ]
                 },
                 Barbell: {
                     Male: [
                         {
-                            name: 'Barbell Curl',
-                            description: 'Classic heavy lift for building mass and strength in biceps.',
-                            gif: 'https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Curl.gif'
+                            name: 'Barbell Shrugs',
+                            description: 'Classic mass-building trap exercise with a loaded barbell.',
+                            gif: 'https://149874912.v2.pressablecdn.com/wp-content/uploads/2020/03/Barbell-Shrug.gif'
                         },
                         {
-                            name: 'EZ Bar Preacher Curl',
-                            description: 'Use preacher bench for strict form, targets lower bicep.',
-                            gif: 'https://media2.giphy.com/media/WsFX0H7qz5M1o8VpxH/giphy.gif?cid=6c09b952x39dblgrpe3un7gcax59qywmubc35p8d3v7a6lkb&ep=v1_gifs_search&rid=giphy.gif&ct=g'
+                            name: 'Upright Row',
+                            description: 'Pull barbell up to collarbone level, engaging upper traps and delts.',
+                            gif: 'https://cdn.shopify.com/s/files/1/0449/8453/3153/files/How_to_Do_Upright_Rows_480x480.gif?v=1689923129'
                         }
                     ],
                     Female: [
                         {
-                            name: 'Light Barbell Curl',
-                            description: 'Controlled curls with lighter weight for toning.',
-                            gif: 'https://cdn.shopify.com/s/files/1/0250/0362/2496/files/892.gif?v=1644825960'
+                            name: 'Barbell Upright Row',
+                            description: 'Lightweight version for shoulder and trap toning.',
+                            gif: 'https://fitnessprogramer.com/wp-content/uploads/2021/06/Barbell-Upright-Row.gif'
                         }
                     ]
                 },
                 Bodyweight: {
                     Male: [
                         {
-                            name: 'Chin-Up',
-                            description: 'Underhand grip pull-up, heavily activates biceps.',
-                            gif: 'https://hips.hearstapps.com/hmg-prod/images/workouts/2016/03/chinup-1457101678.gif'
+                            name: 'Wall Handstand Hold',
+                            description: 'Engages upper traps and delts for shoulder stability.',
+                            gif: 'https://bodyweighttrainingarena.com/wp-content/uploads/2023/09/Wall-handstand-chest-facing.gif'
                         }
                     ],
                     Female: [
                         {
-                            name: 'Negative Chin-Up',
-                            description: 'Jump up to bar and slowly lower to build strength.',
-                            gif: 'https://www.dasantosh.com/wp-content/uploads/2019/09/negative-chin-ups-min.gif'
+                            name: 'Scapular Push-Up',
+                            description: 'Push-up variation focusing on scapula movement and trap activation.',
+                            gif: 'https://static1.squarespace.com/static/5ea57caad08f387b2e9827bd/61c7ae9bf497521cde72e756/6436b8be9b5bbc065a0da2eb/1695380423923/Scapular+Push+Ups.png?format=1500w'
                         }
                     ]
                 },
                 'Resistance Band': {
                     Male: [
                         {
-                            name: 'Band Bicep Curl',
-                            description: 'Step on band and curl handles upward to contract biceps.',
-                            gif: 'https://i.makeagif.com/media/1-16-2019/C5OTVv.gif'
+                            name: 'Band Shrug',
+                            description: 'Step on the band and lift shoulders for a resistance trap workout.',
+                            gif: 'https://musclemagfitness.com/wp-content/uploads/shrugs-with-bands-exercise.gif'
                         }
                     ],
                     Female: [
                         {
-                            name: 'Light Band Curl',
-                            description: 'Great for warm-up or toning with low resistance.',
-                            gif: 'https://media.self.com/photos/65d51cf2e8a6dbc4e5d6111c/master/w_320%2Cc_limit/Robyn-banded-biceps-curl.gif'
+                            gif: 'https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg'
                         }
                     ]
                 },
                 Other: {
                     Male: [
                         {
-                            name: 'Cable Curl',
-                            description: 'Cable machines provide constant tension for growth.',
-                            gif: 'https://ccuuubmtdurkmbeufybi.supabase.co/storage/v1/object/public/animations/0868.gif'
+                            gif: 'https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg'
                         }
                     ],
                     Female: [
                         {
-                            name: 'TRX Curl',
-                            description: 'Suspension trainer curl for body control and muscle tone.',
-                            gif: 'https://images.squarespace-cdn.com/content/v1/5d02eef8911a8d0001896ff8/1618855717674-LJPD7CXDGHDF8FT2W8GG/70-TRX-Row-GIF-25cd5a9e0ea34287badad1fe5cefc982.gif?format=1500w'
+                            gif: 'https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg'
                         }
                     ]
                 }
@@ -282,8 +271,8 @@ button:hover:enabled {
 }
 
 .recommendations img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid #ddd;
