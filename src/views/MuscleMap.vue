@@ -29,9 +29,11 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M289.56,162.48v37.06c0,11.68-7.04,15.63-17.89,19.34-.54.18-1.1.36-1.67.52" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M370.9,162.48v37.06c0,11.68,7.04,15.63,17.89,19.34.54.18,1.1.36,1.67.52" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path
           d="M273.39,881.54c-.16.29-.32.56-.46.83-15.13,26.11-38.4,28.46-48.59,9.57-4.85-8.96-7.91-12.75-15.04-14.45"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
@@ -49,7 +51,8 @@
         <line x1="330.4" y1="504.57" x2="330.4" y2="571.92" fill="none" stroke="#484a68" stroke-linecap="round"
           stroke-linejoin="round" stroke-width="3.46"></line>
         <path d="M29,521.95v.02c1.13,7.67,5.05,13.92,10.29,16.59,4.74,2.41,10.96,2.08,17.03-.58" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path
           d="M145.75,308.53c2.76-1.9,6.01-3.82,9.75-5.55,11.35-5.19,20.97-5.55,22.92-5.6,8.44-.25,16.47-.47,22.46,4.53,10.6,8.82,7.57,27.94,6.41,35.27-.62,3.82-1.53,7.4-2.65,10.74"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
@@ -59,7 +62,8 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M163.96,299.82h.04" fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round"
-          stroke-width="3.46"></path>
+          stroke-width="3.46">
+        </path>
         <path
           d="M174.18,297.7h.04c7.63-1.9,13.62-4.2,17.35-6.79,13.04-9.03,23.37-21.44,28.14-27.15,14.81-17.79,17.05-25.8,32.65-35.93,8.58-5.57,19.32-8.96,19.32-8.96,0,0-25.8-10.83-50.18-5.82h-.02"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
@@ -69,25 +73,33 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M289.56,162.48v37.06c0,11.68-7.04,15.63-17.89,19.34-.54.18-1.1.36-1.67.52" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path
           d="M330.05,340.19c0-16.6-24.92-9.38-34.79-5.64-10.73,4.06-19.35,8.64-22.18,15.17-3.41,7.86,3.69,12.72,4.53,33.36.22,5.38-.28,4.69-.19,15.43.09,11.2,2.29,60.48,4.34,93.33,3.22,51.71,34.57,94.43,48.29,94.43"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M286.4,377c14.08-4.19,23.65-6.71,37.6-6.43,6.05-.02,6.05-9.08,6.05-18.86" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M289.13,423.26c15.66.26,30.17.65,37.75-3.74,4.67-2.71,3.17-10.45,3.17-19.61" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M290.63,471.07c14.49.53,17.46,1.59,31.05,1.19,7.24-.55,8.38-3.7,8.38-19.3" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M298.53,379.04c4.89-1.29,14.76-4.25,22.72-2.87,7.97,1.39,8.8,6.57,8.8,12.58" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M298.53,428.4c6.43-.76,15.03-1.74,22.89-1.63,7.86.11,8.64,5.42,8.64,13.89" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <line x1="330.29" y1="504.57" x2="330.29" y2="571.92" fill="none" stroke="#484a68" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="3.46"></line>
+          stroke-linejoin="round" stroke-width="3.46">
+        </line>
         <path d="M298.53,477.34c5.89-.13,21.17,1.39,26.59,2.64,5.42,1.26,5.16,8.06,5.16,13.98" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path
           d="M218.37,317.78c23.5,26.93,57.29,48.52,58.93,60.58,2.16,15.96-10.33,48.95-6.29,77.1,4.04,28.16-3.04,46.44-12.16,55.38-6.96,6.82-19.03,9.86-29.31,7.43"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
@@ -104,11 +116,14 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <line x1="330.05" y1="504.57" x2="330.05" y2="571.92" fill="none" stroke="#484a68" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="3.46"></line>
+          stroke-linejoin="round" stroke-width="3.46">
+        </line>
         <line x1="330.29" y1="504.57" x2="330.29" y2="571.92" fill="none" stroke="#484a68" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="3.46"></line>
+          stroke-linejoin="round" stroke-width="3.46">
+        </line>
         <line x1="330.4" y1="504.57" x2="330.4" y2="571.92" fill="none" stroke="#484a68" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="3.46"></line>
+          stroke-linejoin="round" stroke-width="3.46">
+        </line>
         <path d="M631.46,521.95v.02c-1.13,7.67-5.05,13.92-10.29,16.59-4.74,2.41-10.96,2.08-17.03-.58" fill="none"
           stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
@@ -121,7 +136,8 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M496.5,299.82h-.04" fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round"
-          stroke-width="3.46"></path>
+          stroke-width="3.46">
+        </path>
         <path
           d="M486.27,297.7h-.04c-7.63-1.9-13.62-4.2-17.35-6.79-13.04-9.03-23.37-21.44-28.14-27.15-14.81-17.79-17.05-25.8-32.65-35.93-8.58-5.57-19.32-8.96-19.32-8.96,0,0,25.8-10.83,50.18-5.82h.02"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
@@ -131,25 +147,33 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M370.9,162.48v37.06c0,11.68,7.04,15.63,17.89,19.34.54.18,1.1.36,1.67.52" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path
           d="M330.4,340.19c0-16.6,24.92-9.38,34.79-5.64,10.73,4.06,19.35,8.64,22.18,15.17,3.41,7.86-3.69,12.72-4.53,33.36-.22,5.38.28,4.69.19,15.43-.09,11.2-2.29,60.48-4.34,93.33-3.22,51.71-34.57,94.43-48.29,94.43"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
         </path>
         <path d="M374.06,377c-14.08-4.19-23.65-6.71-37.6-6.43-6.05-.02-6.05-9.08-6.05-18.86" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M371.33,423.26c-15.66.26-30.17.65-37.75-3.74-4.67-2.71-3.17-10.45-3.17-19.61" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M369.83,471.07c-14.49.53-17.46,1.59-31.05,1.19-7.24-.55-8.38-3.7-8.38-19.3" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M361.93,379.04c-4.89-1.29-14.76-4.25-22.72-2.87-7.97,1.39-8.8,6.57-8.8,12.58" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path d="M361.93,428.4c-6.43-.76-15.03-1.74-22.89-1.63-7.86.11-8.64,5.42-8.64,13.89" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <line x1="330.17" y1="504.57" x2="330.17" y2="571.92" fill="none" stroke="#484a68" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="3.46"></line>
+          stroke-linejoin="round" stroke-width="3.46">
+        </line>
         <path d="M361.93,477.34c-5.89-.13-21.17,1.39-26.59,2.64-5.42,1.26-5.16,8.06-5.16,13.98" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
+        </path>
         <path
           d="M442.09,317.78c-23.5,26.93-57.29,48.52-58.93,60.58-2.16,15.96,10.33,48.95,6.29,77.1-4.04,28.16,3.04,46.44,12.16,55.38,6.96,6.82,19.03,9.86,29.31,7.43"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.46">
@@ -247,6 +271,9 @@
           class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('front-calves')">
         </path>
       </svg>
+
+
+
       <svg class="svg-back" viewBox="-150 0 1000 1250" xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet">
         <path
@@ -263,28 +290,36 @@
         </path>
         <path
           d="M455.77,791.39c-1.19,6.38-2.58,12.65-4.21,18.78-.49,2.22-.72,4.55-.76,7-3.9,15.79-9.27,30.08-15.03,30.77-2.1.24-6.46-1.5-12.31-16.1-7.27-18.11-9.18-19.9-11.54-19.49-2.72.47-2.85,4.22-3.14,13.29-.44,13.91-1.19,37.18-14.61,37.18-11.9,0-19.74-20.05-27.07-69.19-.08-.49-.35-.91-.73-1.17-3.47-16.43-7.45-30.43-11.55-44.89-3.24-11.39-6.58-23.17-9.72-36.45-6.98-29.43-8.2-43.68-9.62-60.19-.39-4.47-.78-9.01-1.29-14.01.84,1.15,1.77,2.19,2.78,3.14,5.97,5.52,14.37,6.89,23.83,6.89,4.61,0,9.48-.33,14.43-.66,1.63-.11,3.27-.22,4.91-.31,8.79-.53,30.52-3.65,42.65-21.18,10.11-14.62,10.97-35.24,2.55-61.28-1.64-5.04-2.93-9.76-4.19-14.33-3.1-11.22-5.73-20.73-11.38-28.13,13.7,8.25,26.93,20.08,28.18,31.58v.04c.03,1.44-.05,2.61-.12,3.72-.28,4.27-.53,7.95,3.98,20.95,8.32,23.97,29.87,128.52,13.96,214.07Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('back-thigh')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('back-thigh')">
+        </path>
         <path
           d="M326.33,636.9c-.52,5.01-.91,9.56-1.29,14.02-1.41,16.5-2.63,30.76-9.62,60.2-3.15,13.28-6.49,25.05-9.72,36.45-4.1,14.46-8.08,28.46-11.55,44.89-.39.26-.66.68-.74,1.17-7.32,49.15-15.16,69.19-27.06,69.19-13.43,0-14.17-23.27-14.62-37.18-.29-9.07-.41-12.82-3.13-13.29-2.35-.4-4.26,1.38-11.54,19.49-5.85,14.59-10.22,16.36-12.31,16.1-5.75-.69-11.14-15.01-15.04-30.81-.05-2.47-.29-4.8-.78-7.05-1.61-6.06-2.99-12.27-4.16-18.58-.02-.06-.03-.13-.04-.19-15.89-85.48,5.65-190.03,13.97-214,4.51-13,4.27-16.68,3.99-20.95-.07-1.12-.15-2.29-.12-3.73v-.06c1.28-11.48,14.49-23.3,28.18-31.54-5.66,7.41-8.28,16.92-11.38,28.14-1.26,4.56-2.56,9.28-4.19,14.32-8.43,26.04-7.58,46.66,2.55,61.28,12.13,17.53,33.86,20.65,42.65,21.18,1.64.1,3.28.21,4.91.31,4.95.33,9.81.66,14.43.66,9.46,0,17.86-1.38,23.82-6.89,1.03-.94,1.95-1.99,2.79-3.16Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('back-thigh')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('back-thigh')">
+        </path>
         <path
           d="M419.87,622.8c-11.23,16.25-31.67,19.17-39.94,19.67-1.65.1-3.31.21-4.94.31-14.32.96-27.85,1.87-35.6-5.29-4.96-4.58-7.37-12.25-7.37-23.45v-60.34c0-17.89,5.12-30.73,15.2-38.16,11.92-8.78,28.54-8.24,40.1-4.82,1.86.55,3.58,1.15,5.18,1.81,0,0,.03,0,.04.02.55.22,1.08.45,1.6.69.03,0,.05.02.07.03,15.29,6.98,18.68,19.28,23.52,36.81,1.26,4.6,2.58,9.35,4.23,14.47,8.08,24.96,7.37,44.56-2.1,58.24Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('glutes')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('glutes')">
+        </path>
         <path
           d="M328.49,553.72v60.34c0,11.2-2.4,18.87-7.36,23.45-7.74,7.16-21.28,6.25-35.6,5.29-1.64-.11-3.29-.22-4.94-.31-8.27-.5-28.7-3.42-39.95-19.67-9.47-13.68-10.17-33.28-2.1-58.24,1.65-5.11,2.96-9.87,4.23-14.47,4.83-17.54,8.23-29.83,23.52-36.81h0c.59-.24,1.17-.48,1.71-.74,1.59-.66,3.31-1.25,5.15-1.8,11.57-3.43,28.18-3.96,40.11,4.82,10.09,7.43,15.2,20.26,15.2,38.16Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('glutes')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('glutes')">
+        </path>
         <path
           d="M639.94,626.64c.44-.52.36-.97-.63-3.61-1.08-2.9-2.88-7.75-3.72-16.17-.15-.79-.35-1.86-.5-2.34-.1-.02-.21-.03-.32-.06-.87-.16-2.16-.4-4.18-1.33.36,1.75.52,3.52.69,5.35.22,2.49.45,5.06,1.22,7.96,2.27,8.63,1.88,9.63-1.83,14.87-.39.55-.82,1.16-1.3,1.84-1.3,1.9-1.78,3.73-1.41,5.47.3,1.47,1.15,2.68,1.96,3.57.85-1.84,2.21-3.65,4.07-5.42.7-1.42,3.69-7.4,5.95-10.12Z"
-          class='body-part' fill="none" stroke="#000" stroke-width="1" ></path>
+          class='body-part' fill="none" stroke="#000" stroke-width="1">
+        </path>
         <path
           d="M651.49,583.8c-3.02-9.69-5.89-18.85-5.92-24.06.31-11.64-.58-16.77-1.79-19.68-2.5,6.52-6.66,11.34-11.52,13.21-1.71.66-3.62.97-5.67.97-3.29,0-6.9-.84-10.54-2.46,1.9,6.05.57,8.47.2,9-.03.03-.04.05-.07.08-8,9.85-7.03,15.67-5.99,21.85.49,2.9.99,5.9.44,9.21-3.09,14.65-3.29,20.48-3.24,22.31,2.7,1.69,4.9,2.1,6.55,1.22,4.41-2.36,5.77-13.81,5.6-20.47-.02-.68.36-1.31.98-1.62.62-.3,1.36-.22,1.9.21,2.33,1.87,4.28,3.25,5.89,4.29.07.04.13.08.2.13,3.86,2.44,5.81,2.81,6.91,3.02,2.76.52,2.98,1.72,3.64,5.27,0,.04,0,.1.02.15.8,8.02,2.44,12.45,3.54,15.38,1.06,2.84,1.82,4.9.04,7.05-2.25,2.7-5.6,9.62-5.63,9.69-.1.2-.23.38-.39.53-2.89,2.65-4.31,5.29-4.25,7.83.05,1.74.8,3.17,1.49,4.13,2.98-3.12,5.98-5.3,8.67-7.24,4.48-3.25,7.73-5.59,8.55-10.55.62-3.75,1.69-7.88,2.71-11.86,1.55-5.97,3.15-12.14,3.16-16.84-.51-4.77-3.04-12.89-5.5-20.74Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('hands')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('hands')">
+        </path>
         <path
           d="M29.85,631.3c-3.72-5.24-4.1-6.24-1.83-14.87.77-2.89,1-5.46,1.22-7.96.17-1.83.33-3.6.69-5.35-2.02.93-3.32,1.17-4.19,1.33-.1.03-.21.04-.31.06-.16.48-.36,1.56-.5,2.34-.84,8.42-2.64,13.27-3.73,16.17-.98,2.64-1.06,3.09-.62,3.61,2.26,2.72,5.25,8.7,5.95,10.12,1.87,1.77,3.23,3.57,4.07,5.41.81-.87,1.65-2.09,1.96-3.56.36-1.74-.11-3.58-1.42-5.47-.47-.68-.9-1.29-1.29-1.84Z"
-          class='body-part' fill="none" stroke="#000" stroke-width="1" ></path>
+          class='body-part' fill="none" stroke="#000" stroke-width="1">
+        </path>
         <path
           d="M49.89,591.99c-.57-3.38-.06-6.38.42-9.28,1.03-6.17,2.01-11.99-6-21.85-.02-.03-.04-.05-.06-.08-.37-.52-1.71-2.95.2-8.99-3.63,1.62-7.25,2.46-10.54,2.46-2.04,0-3.95-.32-5.67-.98-4.86-1.87-9.01-6.69-11.51-13.22-1.21,2.91-2.1,8.03-1.79,19.63-.04,5.26-2.89,14.42-5.92,24.11-2.45,7.85-4.99,15.96-5.49,20.74.02,4.69,1.62,10.87,3.16,16.84,1.03,3.99,2.1,8.11,2.72,11.86.82,4.96,4.06,7.3,8.54,10.55,2.7,1.94,5.69,4.12,8.67,7.24.7-.96,1.46-2.4,1.49-4.16,0-.47-.03-.95-.12-1.43-.41-2.08-1.79-4.21-4.12-6.36-.16-.15-.29-.33-.39-.53-.04-.07-3.39-7-5.63-9.69-1.79-2.15-1.03-4.2.04-7.05,1.09-2.93,2.74-7.36,3.54-15.38,0-.05,0-.1.02-.15.66-3.55.88-4.75,3.64-5.27,1.57-.3,4.86-.93,13-7.44.54-.43,1.27-.51,1.89-.21.62.31,1.01.94.99,1.62-.18,6.66,1.18,18.11,5.6,20.47,1.65.88,3.85.47,6.55-1.22.05-1.78-.13-7.6-3.22-22.22Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('hands')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('hands')">
+        </path>
         <path
           d="M641.37,536.12c-1.96,6.88-5.9,12.17-10.38,13.89-4.44,1.69-10.73.5-16.91-3.2-4.3-9.14-14.31-23.73-36.66-46.42-13.84-13.95-23.22-30.12-32.29-45.76-5.73-9.89-11.14-19.21-17.56-27.96l-.42-.57c-5.13-6.98-8.93-12.15-12-16.23,5.56,3.85,9.87,5.69,13.21,5.69,1.03,0,1.97-.17,2.82-.52,5.08-2.06,5.49-9.14,5.89-15.99.27-4.54.57-9.68,2.41-10.81,2.17-1.33,6.32-.12,9.98.95,4.49,1.31,9.14,2.67,11.84-.1,1.07-1.1,1.66-2.7,1.74-4.91.68.79,1.44,1.57,2.29,2.35,7.59,6.98,33.48,32.65,47.87,69.77,9.51,24.54,17.43,48.99,22.17,63.6,2.34,7.23,3.9,12.01,4.64,13.76.42.99.89,1.75,1.37,2.44Z"
           class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('forearm')">
@@ -295,19 +330,24 @@
         </path>
         <path
           d="M558.73,386.68c-1.2,1.24-4.96.14-8.28-.83-4.59-1.34-9.33-2.73-12.84-.57-3.41,2.1-3.73,7.68-4.08,13.59-.32,5.5-.68,11.73-3.7,12.96-2.65,1.08-9.14-.61-24.99-14.77h0s0-.02-.02-.03c-.02-.02-.03-.03-.04-.04-1.59-1.78-3.24-3.51-5.2-5.5-8.08-8.18-28.8-40.45-36.6-52.6l-.5-.76v-.02s0,0,0,0c0,0-.02-.03-.03-.04-3.09-5.07-.72-16.32,1.57-27.21,2.25-10.68,4.56-21.65,2.09-28.59,12.14,4.23,23.77,4.75,29.99,5.02.7.04,1.33.06,1.88.09,7.16.39,14.43,6.24,14.94,6.66t.02.02s0,0,.03.03c.87.75,22.04,19.45,29.55,45.42.02.09.05.17.09.24.26.57,6.42,13.93,10.73,21.4,1.4,2.41,2.1,5.09,2.81,7.9.04.15.07.3.11.45.57,2.27,1.18,4.68,2.17,7.14,0,0,0,0,0,.02,1.75,6.98,1.03,9.28.31,10.02Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('triceps')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('triceps')">
+        </path>
         <path
           d="M198.03,338.14l-.03.05h0s-.45.71-.45.71c-7.81,12.15-28.53,44.42-36.6,52.6-1.97,2-3.64,3.75-5.26,5.55h0s0,.02,0,.02c-15.85,14.14-22.34,15.83-24.98,14.76-3.02-1.22-3.39-7.46-3.7-12.96-.34-5.91-.67-11.49-4.07-13.59-3.52-2.16-8.27-.77-12.85.57-3.31.97-7.08,2.07-8.28.83-.73-.74-1.44-3.03.31-10.02,0,0,0,0,0-.02.99-2.47,1.59-4.87,2.17-7.14.75-2.99,1.45-5.8,2.93-8.35,4.31-7.47,10.47-20.83,10.73-21.4.04-.08.06-.16.09-.24,7.61-26.35,29.36-45.27,29.58-45.45,0,0,.03-.02.04-.04.67-.54,7.84-6.26,14.92-6.64.56-.03,1.18-.05,1.88-.09,6.22-.27,17.86-.79,29.99-5.03-2.47,6.94-.17,17.91,2.09,28.6,2.3,10.93,4.69,22.22,1.53,27.27Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('triceps')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('triceps')">
+        </path>
         <path
           d="M460.55,310.16c-2.47,11.73-4.81,22.83-1.44,29.18-1.15,5.04-8.99,38.57-20.51,56.67-11.74,18.46-11.85,45.39-11.92,59.85,0,1.61-.02,3.08-.04,4.39-.2,12.91,3.54,55.42,9.02,78.37-9.26-12.73-27.37-23.51-39.84-28.45h0c-.68-.32-1.38-.62-2.1-.92h0c-12.29-5.86-11.8-17.54-11.17-32.16.52-12.39,1.11-26.43-6.06-39.94-27.18-51.29-34.71-74.09-23.78-106.94.02-.04.03-.1.05-.15,1.04-2.86,2.17-5.89,3.39-9.09,8.26-21.71,20.7-51.34,41.17-88.91l.23-.25c9.33,8.75,18.9,16.09,29.02,23.85,6.51,4.99,13.24,10.15,20.16,15.89,4.25,3.52,8.81,6.24,13.42,8.35,0,0,.02,0,.02,0,5.96,3.89,3.13,17.3.4,30.26Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('lats')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('lats')">
+        </path>
         <path
           d="M284.03,437.14c-7.16,13.52-6.57,27.55-6.05,39.94.62,14.65,1.11,26.36-11.25,32.19,0,0-.03,0-.04.02-.65.26-1.29.54-1.9.82,0,0-.02,0-.03,0-12.47,4.94-30.64,15.74-39.91,28.5,5.46-22.96,9.21-65.46,9.01-78.37-.02-1.31-.03-2.79-.04-4.4-.06-14.46-.18-41.38-11.92-59.84-11.52-18.1-19.37-51.63-20.51-56.67,3.37-6.35,1.03-17.45-1.44-29.18-2.75-12.99-5.57-26.43.43-30.29,0,0,0,0,0,0,4.6-2.1,9.15-4.82,13.39-8.33,6.92-5.74,13.65-10.9,20.16-15.89,10.12-7.75,19.69-15.1,29.02-23.85l.23.25c23.51,43.19,36.45,75.86,44.59,98.11,0,.02.02.03.02.04,10.93,32.85,3.39,55.65-23.79,106.94Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('lats')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('lats')">
+        </path>
         <path
           d="M384.18,506.32c-12-2.59-27.49-2.09-39.07,6.44-7.44,5.48-12.42,13.54-14.86,24.07-2.44-10.53-7.42-18.59-14.86-24.07-11.58-8.53-27.07-9.03-39.06-6.44,6.12-7.5,5.66-18.21,5.19-29.38-.5-11.94-1.08-25.48,5.64-38.17,20.65-38.94,30.2-62.3,28.8-86.04,4.76,12.64,8.11,18.59,14.12,18.69.05,0,.12,0,.18,0s.12,0,.19,0c6.01-.11,9.36-6.07,14.13-18.71-1.42,23.73,8.13,47.1,28.78,86.06,6.73,12.68,6.15,26.23,5.65,38.17-.47,11.17-.93,21.88,5.19,29.38Z"
-          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('lowerback')"></path>
+          class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('lowerback')">
+        </path>
         <path
           d="M390.36,237.49c-18.28,34.34-29.74,61.7-37.49,82.12,0,0,0,.03-.02.04,0,.04-.03.06-.04.1-1.22,3-2.31,5.9-3.25,8.73-.03.04-.04.09-.05.13-1.56,4.29-2.96,8.2-4.22,11.72-6.56,18.38-9.85,27.6-15.04,27.6s-8.48-9.22-15.04-27.6c-1.26-3.52-2.65-7.43-4.22-11.72,0-.04-.03-.09-.05-.13-.95-2.83-2.03-5.73-3.25-8.73,0-.04-.03-.06-.04-.1,0,0,0-.03-.02-.04-7.76-20.42-19.22-47.78-37.5-82.12,2.48,1.17,5.04,1.63,7.88,1.63,3.63,0,7.73-.73,12.72-1.63,8.88-1.59,21.05-3.78,39.5-3.78s30.63,2.19,39.51,3.78c4.99.89,9.09,1.63,12.72,1.63,2.84,0,5.39-.45,7.88-1.63Z"
           class='body-part' fill="#fdd" stroke="#000" stroke-width="1" @click="selectPart('traps-middle')">
@@ -325,13 +365,17 @@
           stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
         </path>
         <path d="M17.22,535.8c2.09,7.99,6.55,13.88,11.67,15.84,4.99,1.91,12,.65,18.85-3.56" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M102.63,368.78c-11.91,35.01,10.78,12.73,19.35,18,8.73,5.36-8.23,50.09,34.96,11.52" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M223.86,211.87c23.48-.79,35.4,13.24,40.81,19.16,12.57,13.74,20.72.94,65.59.94" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M264.67,231.03c52.5,96.35,51.77,138.65,65.59,138.65" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M146.43,292.74s7.92-6.67,16.02-7.1c8.1-.43,32.12-.43,50.22-15.45,18.1-15.01,34.72-25.92,50.42-40.9"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
         </path>
@@ -340,7 +384,8 @@
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
         </path>
         <path d="M199.54,339.06c7.74-12.38-13.12-52.58,0-60.72" fill="none" stroke="#484a68" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path
           d="M330.26,614.06c0,35.81-24.38,31.69-49.78,30.16-27.16-1.64-63.32-19.3-43.62-80.18,8.85-27.35,8.53-46.89,35.82-54.97,19.3-5.72,57.58-4.57,57.58,44.65"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
@@ -356,16 +401,20 @@
           stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
         </path>
         <path d="M643.3,535.8c-2.09,7.99-6.55,13.88-11.67,15.84-4.99,1.91-12,.65-18.85-3.56" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M557.89,368.78c11.91,35.01-10.78,12.73-19.35,18-8.73,5.36,8.23,50.09-34.96,11.52" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M390.56,191.86c-21.92-5.91-45.38-4.01-55.35-3.59-3.3.14-6.59.14-9.89,0-9.98-.42-33.44-2.32-55.35,3.59"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
         </path>
         <path d="M436.66,211.87c-23.48-.79-35.4,13.24-40.81,19.16-12.57,13.74-20.72.94-65.59.94" fill="none"
-          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M395.85,231.03c-52.5,96.35-51.77,138.65-65.59,138.65" fill="none" stroke="#484a68"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52"></path>
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
+        </path>
         <path d="M514.09,292.74s-7.92-6.67-16.02-7.1c-8.1-.43-32.12-.43-50.22-15.45-18.1-15.01-34.72-25.92-50.42-40.9"
           fill="none" stroke="#484a68" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.52">
         </path>
