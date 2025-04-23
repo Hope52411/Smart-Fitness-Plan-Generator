@@ -1,6 +1,6 @@
 <template>
     <div class="muscle-page">
-        <h1>🏋️ Front Traps</h1>
+        <h1>🏋️ Traps</h1>
         <p class="intro">
             The front part of the trapezius, also known as the upper traps, plays a crucial role in shoulder elevation,
             neck support, and posture alignment. Strengthening this muscle improves stability in pressing movements and

@@ -1,5 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+
+// 页面组件
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Admin from "../views/Admin.vue";
@@ -45,20 +47,21 @@ const routes = [
     component: ResetPassword,
   },
   {
-    path: "/admin",
-    name: "Admin",
-    component: Admin,
-  },
-  {
     path: "/about",
     name: "About",
     component: About,
   },
-
+  {
+    path: "/admin",
+    name: "Admin",
+    component: Admin,
+    meta: { requiresAuth: true, requiresAdmin: true },
+  },
   {
     path: "/home",
     name: "Home",
     component: Home,
+    meta: { requiresAuth: true },
     children: [
       {
         path: "friends",
@@ -117,7 +120,6 @@ const routes = [
         component: () => import('@/views/DynamicMuscleLoader.vue'),
         props: true
       },
-      
     ],
   },
 ];
@@ -128,18 +130,24 @@ const router = new VueRouter({
   routes,
 });
 
-// ✅ 路由守卫
+// ✅ 全局路由守卫
 router.beforeEach((to, from, next) => {
   const isAuthenticated = localStorage.getItem("isAuthenticated");
   const userRole = localStorage.getItem("userRole");
 
-  if (to.path === "/admin" && userRole !== "Admin") {
-    next({ path: "/" });
-  } else if ((to.path.startsWith("/home") || to.path === "/admin") && !isAuthenticated) {
-    next({ path: "/" });
-  } else {
-    next();
+  // 需要登录
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (!isAuthenticated) {
+      return next({ path: "/" });
+    }
+
+    // 需要 Admin 权限
+    if (to.matched.some(record => record.meta.requiresAdmin) && userRole !== "Admin") {
+      return next({ path: "/" });
+    }
   }
+
+  next();
 });
 
 export default router;

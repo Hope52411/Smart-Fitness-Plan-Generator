@@ -2,6 +2,9 @@
   <div class="page-container">
     <router-view />
     <!-- Home Page -->
+    <div class="instruction-text">
+      Click on the part you want to train, and the system will recommend training movements for you.
+    </div>
     <div class="muscle-map-container">
       <svg class="svg-front" viewBox="-100 0 1000 1250" xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet">
@@ -520,7 +523,7 @@ svg path {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 1100px;
   height: 700px;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -531,4 +534,14 @@ svg path {
   flex-direction: row;
   gap: 20px;
 }
+
+.instruction-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
 </style>
