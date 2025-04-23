@@ -23,7 +23,7 @@
         </el-select>
       </el-form-item>
       <el-form-item style="width: 100%;">
-        <el-button class="login-btn" type="primary" @click="Login">Login</el-button>
+        <el-button class="login-btn" @click="Login">Login</el-button>
       </el-form-item>
       <div class="login-footer">
         <el-button type="text" @click="toRegister">Click me to register</el-button>
@@ -96,7 +96,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* 背景设置 */
 #bgimg {
   height: 100vh;
@@ -129,16 +129,17 @@ export default {
 /* 登录按钮 */
 .login-btn {
   width: 100%;
-  background: linear-gradient(45deg, #505458, #6b6f73);
+  background: linear-gradient(45deg, #45484d, #8e9398);
   border: none;
   font-size: 16px;
   padding: 12px;
   border-radius: 8px;
   transition: all 0.3s;
+  color: white;
 }
 
 .login-btn:hover {
-  background: linear-gradient(45deg, #6b6f73, #505458);
+  background: linear-gradient(45deg, #8e9398, #45484d);
   transform: scale(1.05);
 }
 

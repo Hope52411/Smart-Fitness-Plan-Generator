@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- ✅ 调试信息展示 -->
+    
     <div v-if="!AsyncComponent" style="color: red; text-align: center; margin-top: 60px;">
-      ❌ page cannot be found: {{ part }}
+      <!-- ❌ page cannot be found: {{ part }} -->
     </div>
 
     <!-- ✅ 正常加载组件 -->

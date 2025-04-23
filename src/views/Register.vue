@@ -38,7 +38,7 @@
       </el-form-item>
 
       <el-form-item style="width: 100%;">
-        <el-button class="register-btn" type="primary" @click="submitForm">Register</el-button>
+        <el-button class="register-btn" @click="submitForm">Register</el-button>
 
       </el-form-item>
 
@@ -119,7 +119,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* 背景设置 */
 #bgimg {
   height: 100vh;
@@ -152,16 +152,17 @@ export default {
 /* 注册按钮 */
 .register-btn {
   width: 100%;
-  background: linear-gradient(45deg, #505458, #6b6f73);
+  background: linear-gradient(45deg, #45484d, #8e9398);
   border: none;
   font-size: 16px;
   padding: 12px;
   border-radius: 8px;
   transition: all 0.3s;
+  color: white;
 }
 
 .register-btn:hover {
-  background: linear-gradient(45deg, #6b6f73, #505458);
+  background: linear-gradient(45deg, #8e9398, #45484d);
   transform: scale(1.05);
 }
 
