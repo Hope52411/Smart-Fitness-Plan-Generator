@@ -170,16 +170,19 @@ body {
     white-space: nowrap;
   }
 
+  @media (max-width: 768px) {
   .logout-button {
     grid-column: span 3;
-    width: 90%;
-    margin: 10px auto 0;
-    font-size: 15px;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1;
+    width: 70%;                
+    padding: 8px 0;          
+    font-size: 14px;          
+    margin: 8px auto 0;         
+    border-radius: 10px;
     position: relative;
+    z-index: 1;
   }
+}
+
 
 }
 </style>
