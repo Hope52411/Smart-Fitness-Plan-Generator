@@ -152,6 +152,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
   .navbar nav ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -161,17 +165,17 @@ body {
   }
 
   .navbar nav ul li {
-    margin: 0;
+    margin: 6px 12px;
   }
 
   .navbar nav ul li a {
     font-size: 15px;
     padding: 5px 10px;
     white-space: nowrap;
-  } 
+  }
 
   .logout-button {
-    position: absolute;        /* ✅ 绝对定位 */
+    position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px 12px;
@@ -181,7 +185,7 @@ body {
     border: none;
     border-radius: 8px;
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transition: background 0.3s, transform 0.2s;
   }
 
@@ -190,5 +194,4 @@ body {
     transform: scale(1.05);
   }
 }
-
 </style>
