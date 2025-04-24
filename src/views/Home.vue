@@ -168,21 +168,27 @@ body {
     font-size: 15px;
     padding: 5px 10px;
     white-space: nowrap;
-  }
+  } 
 
-  @media (max-width: 768px) {
   .logout-button {
-    grid-column: span 3;
-    width: 70%;                
-    padding: 8px 0;          
-    font-size: 14px;          
-    margin: 8px auto 0;         
-    border-radius: 10px;
-    position: relative;
-    z-index: 1;
+    position: absolute;        /* ✅ 绝对定位 */
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    font-size: 13px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .logout-button:hover {
+    background: #ff4c4c;
+    transform: scale(1.05);
   }
 }
 
-
-}
 </style>
