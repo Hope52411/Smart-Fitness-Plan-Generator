@@ -153,7 +153,11 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 8px 15px;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar nav ul {
@@ -165,7 +169,7 @@ body {
   }
 
   .navbar nav ul li {
-    margin: 6px 12px;
+    margin: 0;
   }
 
   .navbar nav ul li a {
@@ -185,7 +189,7 @@ body {
     border: none;
     border-radius: 8px;
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     transition: background 0.3s, transform 0.2s;
   }
 
@@ -194,4 +198,6 @@ body {
     transform: scale(1.05);
   }
 }
+
+
 </style>
