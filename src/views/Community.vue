@@ -640,11 +640,11 @@
   .post-creation {
     padding: 15px;
     margin: 10px auto;
-    width: 100%;
+    width: 90%;
   }
 
   .post-input textarea {
-    width: 100%;
+    width: 80%;
     font-size: 14px;
     height: 80px;
   }

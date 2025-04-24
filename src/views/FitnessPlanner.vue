@@ -230,19 +230,28 @@ async sendMessage() {
 @media (max-width: 768px) {
   .chat-container {
     width: 95%;
-    padding: 15px;
+    padding: 12px;
+    max-height: 92vh; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .chat-box {
-    height: 400px;
-    padding: 8px;
+    height: 300px; 
+    padding: 6px;
   }
 
   .message-user p,
   .message-assistant p {
-    max-width: 85%; /* 📱 让消息更宽一些 */
+    max-width: 90%;
     font-size: 14px;
-    padding: 10px;
+    padding: 8px;
   }
 
   .chat-input {
@@ -251,12 +260,13 @@ async sendMessage() {
   }
 
   .send-button {
-    padding: 10px 14px;
+    padding: 8px 12px;
     font-size: 14px;
   }
 
   .input-container {
-    flex-direction: column; /* ✅ 按钮改成在下方 */
+    flex-direction: column;
+    gap: 6px;
   }
 
   .input-container input,
@@ -264,5 +274,6 @@ async sendMessage() {
     width: 100%;
   }
 }
+
 
 </style>

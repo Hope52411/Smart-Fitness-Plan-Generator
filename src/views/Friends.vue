@@ -278,4 +278,58 @@ export default {
     gap: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .friends-container,
+  .friends-section {
+    padding: 20px 15px;
+    max-height: none;          
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .search-section input,
+  .search-section button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .results li,
+  .friends-section li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .results li button,
+  .friends-section button {
+    align-self: flex-end;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .feedback {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .page-wrapper {
+    padding: 10px 10px 40px;
+    gap: 20px;
+  }
+
+  .friends-container h2,
+  .friends-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
 </style>
