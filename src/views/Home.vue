@@ -154,14 +154,14 @@ body {
 @media (max-width: 768px) {
   .navbar nav ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px 15px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px;
     justify-items: center;
     padding: 10px 0;
   }
 
   .navbar nav ul li {
-    margin: 0; 
+    margin: 0;
   }
 
   .navbar nav ul li a {
@@ -171,12 +171,15 @@ body {
   }
 
   .logout-button {
-    grid-column: span 3; 
-    margin-top: 10px;
-    width: 80%;
-    justify-self: center;
+    grid-column: span 3;
+    width: 90%;
+    margin: 10px auto 0;
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1;
+    position: relative;
   }
+
 }
-
-
 </style>

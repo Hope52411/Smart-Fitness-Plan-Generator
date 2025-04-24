@@ -630,4 +630,88 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .community-scroll {
+    width: 95%;
+    padding: 10px 0 30px;
+  }
+
+  .post-creation {
+    padding: 15px;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .post-input textarea {
+    width: 100%;
+    font-size: 14px;
+    height: 80px;
+  }
+
+  .preview-img,
+  .post-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .preview-video,
+  .post-video {
+    max-width: 100%;
+  }
+
+  .upload-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .publish-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .delete-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .comment-input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .comment-input {
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .comment-submit-btn {
+    margin-left: 0;
+    margin-top: 6px;
+    align-self: flex-end;
+  }
+
+  .comment-left {
+    width: auto;
+    padding-left: 0;
+  }
+
+  .comment-content {
+    padding-left: 0;
+    margin-top: 5px;
+  }
+
+  .post-card {
+    padding: 15px;
+  }
+}
+
 </style>
