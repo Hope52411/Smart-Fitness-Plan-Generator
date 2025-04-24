@@ -550,8 +550,8 @@ svg path {
 @media (max-width: 768px) {
   .svg-front,
   .svg-back {
-    width: 100%;
-    max-width: 90vw;
+    width: 80%;
+    max-width: 80vw;
     height: auto;
     margin-bottom: 20px;
   }
@@ -564,6 +564,7 @@ svg path {
   .muscle-map-container {
     flex-direction: column;
     align-items: center;
+    border-radius: 0;
   }
 }
 
