@@ -115,8 +115,11 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 50px;
+  padding: 0 10px 50px; /* 🔧 左右加内边距，防止贴边 */
+  box-sizing: border-box; /* ✅ 防止 padding 撑大宽度 */
+  width: 100%;
 }
+
 
 .friends-container,
 .friends-section {
@@ -132,6 +135,7 @@ export default {
   max-height: 350px;
   overflow-y: auto;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .friends-container h2,

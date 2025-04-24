@@ -47,6 +47,7 @@ export default {
   },
   methods: {
     Login() {
+      // Send login request to backend API
       this.axios.post("https://api.hope52411.tech/sys-user/login", this.loginForm, {
         headers: {
           "Content-Type": "application/json"
@@ -55,12 +56,12 @@ export default {
         .then((resp) => {
           let data = resp.data;
           if (data.success) {
-            // ✅ 存储登录用户信息
+            // Save user session info to localStorage
             localStorage.setItem("userRole", this.loginForm.loginName === "Admin" ? "Admin" : "User");
             localStorage.setItem("isAuthenticated", "true");
             localStorage.setItem("loginName", this.loginForm.loginName);
 
-            console.log("✅ 登录成功，当前用户:", this.loginForm.loginName);
+            console.log("✅ Login successful, current user:", this.loginForm.loginName);
 
             this.$message({
               message: `Welcome to home page, ${this.loginForm.loginName}!`,
@@ -68,7 +69,7 @@ export default {
               duration: 1500
             });
 
-            // ✅ 根据用户跳转到不同页面
+            // Redirect to different pages based on role
             this.$router.push({ path: this.loginForm.loginName === "Admin" ? "/admin" : "/home" });
 
           } else {
@@ -79,16 +80,18 @@ export default {
           }
         })
         .catch((error) => {
-          console.error("❌ 登录请求错误:", error);
+          console.error("❌ Login request error:", error);
           this.$message({
             message: "Server error, please try again later.",
             type: "error",
           });
         });
     },
+    // Navigate to register page
     toRegister() {
       this.$router.push({ path: "/Register" });
     },
+    // Navigate to forgot password page
     toForgotPassword() {
       this.$router.push({ path: "/forgot-password" });
     },
@@ -97,7 +100,7 @@ export default {
 </script>
 
 <style scoped>
-/* 背景设置 */
+/* Full screen background with image */
 #bgimg {
   height: 100vh;
   display: flex;
@@ -106,18 +109,20 @@ export default {
   background: url("~@/assets/bgimg.png") no-repeat center center/cover;
 }
 
+/* Login form container styling */
 .login-container {
   border-radius: 15px;
   background-clip: padding-box;
   margin: 90px auto;
-  width: 350px;
+  width: 80%;
+  max-width: 300px;
   padding: 35px 35px 15px 35px;
   background: #fff;
   border: 1px solid #eaeaea;
   box-shadow: 0 0 25px #cac6c6;
 }
 
-/* 标题样式 */
+/* Login title */
 .login_title {
   text-align: center;
   font-size: 24px;
@@ -126,7 +131,7 @@ export default {
   margin-bottom: 30px;
 }
 
-/* 登录按钮 */
+/* Login button */
 .login-btn {
   width: 100%;
   background: linear-gradient(45deg, #45484d, #8e9398);
@@ -143,21 +148,21 @@ export default {
   transform: scale(1.05);
 }
 
-/* 底部按钮 */
+/* Footer buttons */
 .login-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* 输入框样式 */
+/* Input field style */
 .el-input__inner {
   border-radius: 8px;
   height: 40px;
   font-size: 14px;
 }
 
-/* 下拉选择框 */
+/* Select box */
 .el-select {
   width: 100%;
 }

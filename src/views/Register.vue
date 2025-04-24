@@ -39,7 +39,6 @@
 
       <el-form-item style="width: 100%;">
         <el-button class="register-btn" @click="submitForm">Register</el-button>
-
       </el-form-item>
 
       <div class="register-footer">
@@ -93,14 +92,16 @@ export default {
         return;
       }
 
+      // Validate the form before submitting
       this.$refs.ruleForm.validate((valid) => {
         if (valid) {
+          // Send registration request to backend API
           this.axios.post("https://api.hope52411.tech/sys-user/register", this.ruleForm)
             .then((resp) => {
               let data = resp.data;
               if (data.success) {
                 this.$message({ message: "Registration successful!", type: "success" });
-                this.$refs.ruleForm.resetFields(); // 清空表单
+                this.$refs.ruleForm.resetFields(); // Reset form fields
               } else {
                 this.$message({ message: "The username is already taken, please try again", type: "error" });
               }
@@ -110,8 +111,8 @@ export default {
             });
         }
       });
-    }
-    ,
+    },
+    // Navigate to login page
     toLogin() {
       this.$router.push({ path: "/" });
     },
@@ -120,7 +121,7 @@ export default {
 </script>
 
 <style scoped>
-/* 背景设置 */
+/* Fullscreen background */
 #bgimg {
   height: 100vh;
   display: flex;
@@ -129,18 +130,20 @@ export default {
   background: url("~@/assets/bgimg.png") no-repeat center center/cover;
 }
 
+/* Register form container styling */
 .register-container {
   border-radius: 15px;
   background-clip: padding-box;
   margin: 90px auto;
-  width: 350px;
+  width: 80%;
+  max-width: 300px;
   padding: 35px 35px 15px 35px;
   background: #fff;
   border: 1px solid #eaeaea;
   box-shadow: 0 0 25px #cac6c6;
 }
 
-/* 标题样式 */
+/* Title styling */
 .register_title {
   text-align: center;
   font-size: 24px;
@@ -149,7 +152,7 @@ export default {
   margin-bottom: 30px;
 }
 
-/* 注册按钮 */
+/* Register button */
 .register-btn {
   width: 100%;
   background: linear-gradient(45deg, #45484d, #8e9398);
@@ -166,24 +169,22 @@ export default {
   transform: scale(1.05);
 }
 
-/* 输入框样式 */
+/* Input field styling */
 .el-input__inner {
   border-radius: 8px;
   height: 40px;
   font-size: 14px;
 }
 
-/* 选择框样式 */
+/* Select box styling */
 .el-select {
   width: 100%;
 }
 
-/* 底部按钮 */
+/* Footer section */
 .register-footer {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-
-
 </style>

@@ -150,4 +150,24 @@ body {
 .logout-button:hover {
   background: #ff4757;
 }
+
+@media (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav ul li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .logout-button {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 </style>

@@ -64,4 +64,8 @@ html, body {
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 </style>

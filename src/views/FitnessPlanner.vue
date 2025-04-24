@@ -226,4 +226,43 @@ async sendMessage() {
 .slide-up-leave-to {
   transform: translateY(100px);
 }
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .chat-box {
+    height: 400px;
+    padding: 8px;
+  }
+
+  .message-user p,
+  .message-assistant p {
+    max-width: 85%; /* 📱 让消息更宽一些 */
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .chat-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .send-button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .input-container {
+    flex-direction: column; /* ✅ 按钮改成在下方 */
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+  }
+}
+
 </style>
