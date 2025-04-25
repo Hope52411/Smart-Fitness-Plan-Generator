@@ -1,7 +1,7 @@
 <template>
   <div id="bgimg">
     <el-form class="login-container" label-position="left" label-width="0px">
-      <h3 class="login_title">Login</h3>
+      <h3 class="login_title">Login01</h3>
       <el-form-item>
         <el-input type="text" v-model="loginForm.loginName" autocomplete="off" placeholder="Username">
           <template #prefix>
