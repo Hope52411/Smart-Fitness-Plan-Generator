@@ -36,7 +36,7 @@ jobs:
 
             scp -r login01/dist/* $EC2_USERNAME@$EC2_PUBLIC_DNS:/home/ubuntu/frontend
 
-            ssh $EC2_USERNAME@$EC2_PUBLIC_DNS << EOF
+            ssh $EC2_USERNAME@$EC2_PUBLIC_DNS \<< EOF
               sudo chown -R www-data:www-data /home/ubuntu/frontend
               sudo chmod -R 755 /home/ubuntu/frontend
               sudo nginx -t
