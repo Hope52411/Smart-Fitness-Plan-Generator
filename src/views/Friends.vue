@@ -286,6 +286,10 @@ export default {
   align-items: center;   
   gap: 30px;            
   padding: 30px 0;
+
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding-bottom: 30px;
 }
 
 
