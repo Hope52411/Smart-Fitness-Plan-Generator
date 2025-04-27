@@ -81,15 +81,12 @@ export default {
 
 <style scoped>
 .contact-wrapper {
-  min-height: 100vh; 
   padding: 80px 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   box-sizing: border-box;
-  overflow-x: hidden; 
-  overflow-y: auto;  
-  background: #f9f9f9; 
+  min-height: 80px;
 }
 
 .contact-card {
@@ -98,12 +95,8 @@ export default {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 1100px; 
   overflow: hidden;
-  margin-bottom: 30px; 
 }
-
 
 
 .contact-left {
