@@ -207,7 +207,8 @@ export default {
 
 @media (max-width: 768px) {
   .contact-wrapper {
-    padding: 10px 20px;
+    padding: 20px 20px;
+    overflow-x: auto;
   }
 }
 
