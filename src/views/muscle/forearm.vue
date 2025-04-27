@@ -325,18 +325,19 @@ button:hover:enabled {
     margin: 20px auto;
     padding: 20px;
     max-width: 95%;
-    max-height: none; 
-    overflow-y: auto;
+    max-height: none; /* ✅ 删除高度限制 */
+    overflow: visible; /* ✅ 允许正常滚动 */
   }
 
   .muscle-page h1 {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .intro {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 20px;
-    padding: 0 10px;
+    padding: 0 8px;
   }
 
   .selector-block select {
@@ -349,28 +350,41 @@ button:hover:enabled {
     padding: 10px 20px;
   }
 
+  .recommendations {
+    margin-top: 30px;
+  }
+
   .recommendations h3 {
     font-size: 20px;
   }
 
+  .recommendations ul {
+    gap: 15px;
+  }
+
   .recommendations li {
-    padding: 15px;
+    padding: 12px;
+    border-radius: 10px;
   }
 
   .recommendations li h4 {
     font-size: 16px;
+    margin-bottom: 6px;
   }
 
   .recommendations li p {
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 8px;
   }
 
   .recommendations img {
     width: 100%;
     height: auto;
-    max-height: 200px;
+    max-height: 180px; 
     object-fit: cover;
+    border-radius: 8px;
   }
 }
+
 
 </style>
