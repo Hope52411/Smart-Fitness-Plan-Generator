@@ -124,16 +124,9 @@ export default {
 .friends-scroll {
   width: 80%;
   max-width: 800px;
-  flex-grow: 1;
-  overflow-y: auto;
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
-
+  height: calc(100vh - 60px);
+  overflow-y: auto; 
+  padding-bottom: 30px;
 }
 
 .friends-container,
