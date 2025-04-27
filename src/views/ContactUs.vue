@@ -206,7 +206,7 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .contact-wrapper {
     padding: 20px;
     height: 100vh; /* 视口高度 */
@@ -216,12 +216,28 @@ export default {
 
   .contact-card {
     flex-direction: column;
-    min-height: 700px;
+    min-height: auto;
   }
 
   .contact-left,
   .contact-right {
     padding: 30px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px; 
+  }
+
+  .contact-form textarea {
+    min-height: 100px;
   }
 }
 
