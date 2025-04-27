@@ -129,8 +129,34 @@ export default {
   padding-bottom: 30px;
 }
 
-.friends-container,
+.friends-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.friends-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.friends-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.friends-container {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .friends-section {
+  margin-top: 20px;
   width: 100%;
   max-width: 700px;
   background: rgba(255, 255, 255, 0.9);
