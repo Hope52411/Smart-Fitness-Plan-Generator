@@ -206,24 +206,20 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .contact-wrapper {
+    flex-direction: column; /* ✅ 左右改成上下堆叠 */
+    max-width: 95%; /* ✅ 进一步缩小 */
+    padding: 20px 10px;
+  }
+
+  .contact-left, .contact-right {
     padding: 20px;
-    height: 100vh; /* 视口高度 */
-    overflow-y: auto; /* 开启竖向滚动 */
-  }
-  
-
-  .contact-card {
-    flex-direction: column;
-    min-height: 700px;
-  }
-
-  .contact-left,
-  .contact-right {
-    padding: 30px;
+    margin-bottom: 20px; /* 上下间隔 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
 }
+
 
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
