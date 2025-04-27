@@ -559,8 +559,8 @@ svg path {
 
   .svg-front,
   .svg-back {
-    width: 80%;
-    max-width: 80vw;
+    width: 100%;
+    max-width: 100vw;
     height: auto;
     margin-bottom: 20px;
   }
@@ -574,6 +574,8 @@ svg path {
     flex-direction: column;
     align-items: center;
     border-radius: 0;
+    width: 80%; 
+    padding: 15px;
   }
 }
 
