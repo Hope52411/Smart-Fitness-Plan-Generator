@@ -534,7 +534,7 @@ svg path {
   height: auto;
   margin: 20px auto 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;    
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -569,15 +569,18 @@ svg path {
   }
 
   .muscle-map-container {
-  display: flex;           
-  flex-direction: column;  
-  align-items: center;    
-  width: 90%;
-  padding: 15px;
-  border-radius: 12px;
-  overflow-y: auto;
-  max-height: calc(100vh - 120px);
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+    background-color: rgba(255, 255, 255, 0.85); 
+  }
 
 }
 
