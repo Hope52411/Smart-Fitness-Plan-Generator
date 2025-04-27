@@ -38,8 +38,6 @@
         <div class="reset-footer">
           <el-button type="text" @click="backToLogin">Back to Login</el-button>
         </div>
-
-        <p v-if="message" class="info-message">{{ message }}</p>
       </el-form>
     </div>
   </div>
@@ -54,7 +52,6 @@ export default {
       newPassword: "",
       confirmPassword: "",
       token: "",
-      message: "",
       loading: false,
     };
   },
@@ -66,12 +63,11 @@ export default {
   methods: {
     async resetPassword() {
       if (this.newPassword !== this.confirmPassword) {
-        this.message = "Passwords do not match!";
+        this.$message.error("Passwords do not match!");
         return;
       }
 
       this.loading = true;
-      this.message = "";
 
       try {
         const response = await axios.post(
@@ -82,18 +78,20 @@ export default {
           }
         );
 
-        this.message = "🎉 Password reset successful! Redirecting to login...";
+        this.$message({
+          message: "🎉 Password reset successful! Redirecting to login...",
+          type: "success",
+        });
+
         setTimeout(() => {
           this.backToLogin();
         }, 2000);
       } catch (error) {
         console.error("❌ Reset Password Error:", error.response);
-        if (error.response && error.response.data) {
-          this.message =
-            error.response.data.message || "Failed to reset password.";
-        } else {
-          this.message = "Failed to reset password. Please try again.";
-        }
+        let errorMsg =
+          error.response?.data?.message || "Failed to reset password. Please try again.";
+
+        this.$message.error(errorMsg);
       } finally {
         this.loading = false;
       }
@@ -156,12 +154,5 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-}
-
-.info-message {
-  text-align: center;
-  color: #606266;
-  margin-top: 15px;
-  font-size: 14px;
 }
 </style>
