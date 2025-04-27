@@ -113,13 +113,12 @@ export default {
 
 <style scoped>
 .page-wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  padding: 0 10px 50px; /* 🔧 左右加内边距，防止贴边 */
-  box-sizing: border-box; /* ✅ 防止 padding 撑大宽度 */
-  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 
@@ -344,12 +343,7 @@ export default {
     font-size: 14px;
     margin-top: 15px;
   }
-
-  .page-wrapper {
-    padding: 10px 10px 40px;
-    gap: 20px;
-  }
-
+  
   .friends-container h2,
   .friends-section h3 {
     font-size: 20px;
