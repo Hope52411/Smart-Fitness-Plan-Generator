@@ -113,12 +113,14 @@ export default {
 
 <style scoped>
 .friends-page {
-  height: 100vh;
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow: hidden;
+  overflow-x: hidden; 
+  overflow-y: auto;   
+  padding: 20px 0;
 }
 
 
