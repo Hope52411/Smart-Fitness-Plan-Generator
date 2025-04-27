@@ -164,4 +164,10 @@ button:hover {
     color: #2f3ab2;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .tool-container {
+        padding: 10px 20px;
+    }
+}
 </style>

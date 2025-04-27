@@ -98,7 +98,6 @@ export default {
   overflow: hidden;
 }
 
-
 .contact-left {
   flex: 1;
   background: #f4f6fa;
@@ -210,13 +209,19 @@ export default {
   .contact-wrapper {
     padding: 10px 20px;
   }
+  
   .contact-card {
     flex-direction: column;
+    overflow: auto; /* Ensures scrolling is enabled */
   }
 
   .contact-left,
   .contact-right {
     padding: 30px;
+  }
+
+  .slide-in {
+    animation: none; /* Disable animation on small screens */
   }
 }
 
