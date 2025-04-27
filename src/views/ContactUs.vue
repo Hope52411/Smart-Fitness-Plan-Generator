@@ -208,15 +208,19 @@ export default {
 @media (max-width: 768px) {
   .contact-wrapper {
     padding: 20px;
-    height: 100vh;
-    overflow-y: auto; 
+    height: 100vh; /* 占满整个屏幕高度 */
+    overflow-y: auto; /* 允许上下滑动 */
+    overflow-x: hidden; /* 禁止横向滚动 */
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
   .contact-card {
-    flex-direction: column;
+    flex-direction: column; 
     width: 100%;
+    max-width: 100%;
     flex: none;
   }
 
@@ -224,8 +228,16 @@ export default {
   .contact-right {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
+
 
 
 .slide-in {
