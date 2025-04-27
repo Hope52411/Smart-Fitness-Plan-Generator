@@ -126,22 +126,19 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  base: process.env.BASE_URL,
+  base: '/',
   routes,
 });
 
-// ✅ 全局路由守卫
 router.beforeEach((to, from, next) => {
   const isAuthenticated = localStorage.getItem("isAuthenticated");
   const userRole = localStorage.getItem("userRole");
 
-  // 需要登录
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!isAuthenticated) {
       return next({ path: "/" });
     }
 
-    // 需要 Admin 权限
     if (to.matched.some(record => record.meta.requiresAdmin) && userRole !== "Admin") {
       return next({ path: "/" });
     }
