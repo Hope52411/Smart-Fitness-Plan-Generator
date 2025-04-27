@@ -322,9 +322,13 @@ button:hover:enabled {
 
 @media (max-width: 768px) {
   .muscle-page {
-    max-width: 60%;
-    max-height: 60%; 
-    overflow: visible; 
+    max-width: 95%;        /* 让内容更宽一点 */
+    margin: 20px auto;      /* 上下间距小一点 */
+    padding: 20px;          /* 内容留白不要太挤 */
+    max-height: none;       /* ❗取消 max-height 限制❗ */
+    overflow: visible;      /* ❗取消 overflow: auto，默认显示全部 */
+    border-radius: 12px;    /* 圆角小一点更好看 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   .muscle-page h1 {
@@ -378,7 +382,7 @@ button:hover:enabled {
   .recommendations img {
     width: 100%;
     height: auto;
-    max-height: 180px; 
+    max-height: 200px;       /* ✅ 图片高度控制一下，不然太高了 */
     object-fit: cover;
     border-radius: 8px;
   }
