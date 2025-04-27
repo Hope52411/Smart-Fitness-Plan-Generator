@@ -206,7 +206,6 @@ export default {
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   font-family: 'Segoe UI', sans-serif;
-  max-height: 700px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -322,75 +321,113 @@ button:hover:enabled {
 
 @media (max-width: 768px) {
   .muscle-page {
-    max-width: 95%;        /* 让内容更宽一点 */
-    margin: 20px auto;      /* 上下间距小一点 */
-    padding: 20px;          /* 内容留白不要太挤 */
-    max-height: none;       /* ❗取消 max-height 限制❗ */
-    overflow: visible;      /* ❗取消 overflow: auto，默认显示全部 */
-    border-radius: 12px;    /* 圆角小一点更好看 */
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95); /* 更干净的白色背景 */
   }
 
   .muscle-page h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #1f2937;
   }
 
   .intro {
     font-size: 15px;
     margin-bottom: 20px;
-    padding: 0 8px;
+    padding: 0 10px;
+    line-height: 1.5;
+    color: #4b5563;
+    text-align: center;
+  }
+
+  .selectors {
+    gap: 15px;
   }
 
   .selector-block select {
     font-size: 14px;
-    padding: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: #f9fafb;
   }
 
   button {
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 10px 22px;
+    border-radius: 8px;
+    background-color: #10b981;
+    color: white;
+    transition: background 0.3s;
+  }
+
+  button:hover:enabled {
+    background-color: #059669;
+  }
+
+  button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
   }
 
   .recommendations {
-    margin-top: 20px; 
-    width: 100%;     
+    margin-top: 25px;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: visible;
   }
 
   .recommendations h3 {
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 18px;
   }
 
   .recommendations ul {
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
   }
 
   .recommendations li {
-    padding: 12px;
-    width: 100%;
+    background: #ffffff;
+    padding: 14px;
     border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
   }
 
   .recommendations li h4 {
     font-size: 16px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    color: #1f2937;
   }
 
   .recommendations li p {
     font-size: 13px;
-    margin-bottom: 8px;
+    color: #4b5563;
+    margin-bottom: 10px;
   }
 
   .recommendations img {
     width: 100%;
     height: auto;
-    max-height: 200px;      
+    max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    border: 1px solid #e5e7eb;
   }
 }
+
 
 
 </style>
