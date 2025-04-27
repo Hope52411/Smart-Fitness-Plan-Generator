@@ -208,14 +208,14 @@ export default {
 @media (max-width: 768px) {
   .contact-wrapper {
     padding: 20px;
-    min-height: 100vh; /* 占满整个屏幕高度 */
-    overflow-y: auto; /* 允许上下滑动 */
-    overflow-x: hidden; /* 禁止横向滚动 */
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     max-width: 100%;
-
+    margin-bottom: 100px;
   }
 
   .contact-card {
