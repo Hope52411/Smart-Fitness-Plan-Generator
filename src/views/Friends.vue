@@ -113,36 +113,30 @@ export default {
 
 <style scoped>
 .friends-page {
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow-x: hidden; 
-  overflow-y: auto;   
+  overflow: hidden;
 }
 
-
-.friends-container {
-  width: 100%;
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(10px);
-  text-align: center;
-  transition: all 0.3s ease;
-  overflow-x: hidden;
-  box-sizing: border-box;
+.friends-scroll {
+  width: 80%;
+  max-width: 800px;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin: 20px auto;
+  align-items: center;
+  gap: 20px;
 }
+
+.friends-container,
 .friends-section {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 20px;
@@ -150,8 +144,9 @@ export default {
   backdrop-filter: blur(10px);
   text-align: center;
   transition: all 0.3s ease;
-  overflow-x: hidden;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .friends-container h2,
@@ -159,14 +154,15 @@ export default {
   font-size: 24px;
   font-weight: bold;
   color: #2c3e50;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
+/* 搜索栏 */
 .search-section {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .search-section input {
@@ -192,66 +188,16 @@ export default {
   background-color: #5563c1;
 }
 
-.results h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.results ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.results li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f4f6fc;
-  border-radius: 12px;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.results li button {
-  background-color: #667eea;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.results li button:hover {
-  background-color: #4b55c4;
-}
-
-.feedback {
-  margin-top: 20px;
-  font-weight: 600;
-  color: #c0392b;
-  font-size: 16px;
-}
-
-.friends-section h3 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
+/* 搜索结果 */
+.results ul,
 .friends-section ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  max-width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
+.results li,
 .friends-section li {
   display: flex;
   justify-content: space-between;
@@ -260,73 +206,65 @@ export default {
   border-radius: 12px;
   padding: 12px 16px;
   margin-bottom: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.results li button,
 .friends-section button {
   background-color: #23c99e;
-  color: #fff;
+  color: white;
   border: none;
   padding: 6px 12px;
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+.results li button:hover,
 .friends-section button:hover {
   background-color: #1ba886;
 }
 
-.friends-scroll {
-  width: 80%;
-  max-width: 800px;
-  display: flex;         
-  flex-direction: column; 
-  align-items: center;   
-  gap: 30px;            
-  padding: 30px 0;
-
-  height: calc(100vh - 60px);
-  overflow-y: auto;
-  padding-bottom: 30px;
+.feedback {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #c0392b;
+  font-size: 16px;
 }
-
 
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
 }
 
-@media (max-width: 768px) {
-  .search-section {
-    flex-direction: column;
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-
-  .search-section input,
-  .search-section button {
-    width: 100%;
-  }
-
-  .results li,
-  .friends-section li {
-    flex-direction: column;
-    gap: 10px;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
+/* 手机端优化 */
 @media (max-width: 768px) {
+  .friends-scroll {
+    width: 95%;
+    padding: 20px 0;
+  }
+
   .friends-container,
   .friends-section {
     padding: 20px 15px;
-    max-height: none;          
-    width: 100%;
-    box-sizing: border-box;
+    max-width: 95%;
+    gap: 15px;
   }
 
   .search-section {
     flex-direction: column;
     gap: 10px;
-    align-items: center;
   }
 
   .search-section input,
@@ -340,7 +278,7 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    padding: 10px;
+    padding: 12px;
   }
 
   .results li button,
@@ -350,16 +288,13 @@ export default {
     padding: 6px 10px;
   }
 
-  .feedback {
-    font-size: 14px;
-    margin-top: 15px;
-  }
-
   .friends-container h2,
   .friends-section h3 {
     font-size: 20px;
-    margin-bottom: 15px;
+  }
+
+  .feedback {
+    font-size: 14px;
   }
 }
-
 </style>
