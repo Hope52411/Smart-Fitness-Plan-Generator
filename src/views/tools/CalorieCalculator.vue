@@ -74,7 +74,7 @@ export default {
 .tool-container {
     display: flex;
     justify-content: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
 }
 
 .tool-card {
@@ -155,7 +155,7 @@ button:hover {
 .result-card {
     background: #f7f7f7;
     border-radius: 12px;
-    padding: 20px;
+    padding: 5px;
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
