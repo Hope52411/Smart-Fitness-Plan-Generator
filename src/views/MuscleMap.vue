@@ -558,11 +558,9 @@ svg path {
 @media (max-width: 768px) {
   .svg-front,
   .svg-back {
-    width: 90%;
-    max-width: 100vw;
-    height: 100%;
-    margin-bottom: 20px;
-  }
+    width: 80%;
+    max-width: 80vw;
+    height: auto;
 
   .instruction-text {
     font-size: 16px;
@@ -570,19 +568,18 @@ svg path {
   }
 
   .muscle-map-container {
-    border-radius: 12px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; 
+    width: 90%; /* ✅ 再宽一点，不然太窄 */
+    max-width: 95vw;
     padding: 15px;
+    border-radius: 12px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
-
-.muscle-map-scroll {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
 }
 
 </style>
