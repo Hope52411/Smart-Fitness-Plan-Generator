@@ -120,7 +120,6 @@ export default {
   justify-content: flex-start;
   overflow-x: hidden; 
   overflow-y: auto;   
-  padding: 20px 0;
 }
 
 
@@ -134,8 +133,6 @@ export default {
   backdrop-filter: blur(10px);
   text-align: center;
   transition: all 0.3s ease;
-  max-height: 350px;
-  overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
   display: flex;
@@ -153,8 +150,6 @@ export default {
   backdrop-filter: blur(10px);
   text-align: center;
   transition: all 0.3s ease;
-  max-height: 350px;
-  overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -286,10 +281,13 @@ export default {
 .friends-scroll {
   width: 80%;
   max-width: 800px;
-  height: calc(100vh - 60px);
-  overflow-y: auto;
-  padding-bottom: 30px;
+  display: flex;         
+  flex-direction: column; 
+  align-items: center;   
+  gap: 30px;            
+  padding: 30px 0;
 }
+
 
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
