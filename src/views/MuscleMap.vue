@@ -558,9 +558,9 @@ svg path {
 @media (max-width: 768px) {
   .svg-front,
   .svg-back {
-    width: 85%;
+    width: 90%;
     max-width: 100vw;
-    height: auto;
+    height: 100%;
     margin-bottom: 20px;
   }
 
