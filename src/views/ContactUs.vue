@@ -1,6 +1,6 @@
 <template>
   <div class="contact-wrapper">
-    <div class="contact-card">
+    <div class="contact-card slide-in">
       <div class="contact-left">
         <h2 class="title">Get in Touch</h2>
         <p class="description">
@@ -81,13 +81,12 @@ export default {
 
 <style scoped>
 .contact-wrapper {
-  padding: 100px 20px;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 100vh;
-  background: #f0f2f5;
+  min-height: 80px;
 }
 
 .contact-card {
@@ -97,10 +96,8 @@ export default {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  width: 100%;
-  max-width: 900px;
-  height: 600px;
 }
+
 
 .contact-left {
   flex: 1;
@@ -188,7 +185,7 @@ export default {
 }
 
 .contact-form textarea {
-  min-height: 50px;
+  min-height: 120px;
   resize: vertical;
 }
 
@@ -209,21 +206,30 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .contact-wrapper {
-    padding: 20px;
-  }
-
+@media (max-width: 900px) {
   .contact-card {
     flex-direction: column;
-    height: 90vh;
-    overflow-y: auto; 
   }
 
   .contact-left,
   .contact-right {
     padding: 30px;
-    flex: none;
+  }
+}
+
+.slide-in {
+  animation: slideInUp 0.6s ease-out both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 </style>
