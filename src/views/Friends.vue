@@ -1,6 +1,6 @@
 <template>
   <div class="page-wrapper">
-    <div class="community-scroll slide-in">
+    <div class="friends-scroll slide-in">
     <!-- 添加好友区域 -->
     <div class="friends-container">
       <h2>👥 Add New Friends</h2>
@@ -263,7 +263,7 @@ export default {
   background-color: #1ba886;
 }
 
-.community-scroll {
+.friends-scroll {
   width: 80%;
   max-width: 800px;
   height: calc(100vh - 60px);
@@ -343,7 +343,7 @@ export default {
     font-size: 14px;
     margin-top: 15px;
   }
-  
+
   .friends-container h2,
   .friends-section h3 {
     font-size: 20px;
