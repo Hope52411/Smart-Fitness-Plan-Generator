@@ -49,7 +49,8 @@ export default {
   padding: 60px 20px;
   min-height: 100vh;
   box-sizing: border-box;
-  overflow: hidden; 
+  overflow-x: hidden;
+  overflow-y: auto; 
 }
 
 .tools-container {
@@ -60,21 +61,6 @@ export default {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
   max-width: 960px;
   width: 100%;
-  margin-bottom: 30px; 
-  height: calc(100vh - 60px);
-  overflow-y: auto;
-  padding-bottom: 30px;
-}
-
-.tools-container::-webkit-scrollbar {
-  width: 8px;
-}
-.tools-container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-.tools-container::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .page-title {
@@ -134,6 +120,43 @@ export default {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .tools-page {
+    padding: 40px 15px;
+    min-height: auto;  
+    overflow-y: auto; 
+  }
+
+  .tools-container {
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tool-grid {
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem;
+  }
+
+  .tool-card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .emoji {
+    font-size: 1.8rem;
+  }
+
+  .tool-card p {
+    font-size: 0.95rem;
   }
 }
 
