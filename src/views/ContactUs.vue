@@ -185,7 +185,7 @@ export default {
 }
 
 .contact-form textarea {
-  min-height: 30px;
+  min-height: 120px;
   resize: vertical;
 }
 
@@ -205,41 +205,17 @@ export default {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .contact-wrapper {
-    padding: 20px;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    max-width: 100%;
-    margin-bottom: 1000px;
-  }
-
+/* Responsive */
+@media (max-width: 900px) {
   .contact-card {
-    flex-direction: column; 
-    width: 100%;
-    max-width: 100%;
-    flex: none;
+    flex-direction: column;
   }
 
   .contact-left,
   .contact-right {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    box-sizing: border-box;
+    padding: 30px;
   }
 }
-
-
 
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
