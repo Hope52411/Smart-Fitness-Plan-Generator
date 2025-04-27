@@ -207,10 +207,26 @@ export default {
 
 @media (max-width: 768px) {
   .contact-wrapper {
-    padding: 20px 20px;
-    overflow-x: auto;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    width: 100%;
+    flex: none;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 20px;
   }
 }
+
 
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
