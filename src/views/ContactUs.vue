@@ -159,6 +159,7 @@ export default {
   flex: 1;
   padding: 40px;
   background: #fff;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .contact-form {
@@ -212,12 +213,22 @@ export default {
   
   .contact-card {
     flex-direction: column;
-    overflow: auto; /* Ensures scrolling is enabled */
+    overflow: auto; /* Ensures scrolling for the whole card */
+    max-height: 80vh; /* Limit the height of the card */
   }
 
   .contact-left,
   .contact-right {
     padding: 30px;
+  }
+
+  .contact-left,
+  .contact-right {
+    max-height: 100%; /* Ensure they can scroll vertically */
+  }
+
+  .contact-right {
+    padding-bottom: 80px; /* Ensure submit button stays at the bottom */
   }
 
   .slide-in {
