@@ -185,7 +185,7 @@ export default {
 }
 
 .contact-form textarea {
-  min-height: 120px;
+  min-height: 30px;
   resize: vertical;
 }
 
@@ -205,15 +205,9 @@ export default {
   transform: scale(1.05);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-card {
-    flex-direction: column;
-  }
-
-  .contact-left,
-  .contact-right {
-    padding: 30px;
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 10px 20px;
   }
 }
 
