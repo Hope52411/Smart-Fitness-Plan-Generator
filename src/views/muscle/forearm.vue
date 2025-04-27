@@ -353,7 +353,10 @@ button:hover:enabled {
   }
 
   .recommendations {
-    margin-top: 30px;
+    margin-top: 20px; 
+    width: 100%;     
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .recommendations h3 {
@@ -366,6 +369,7 @@ button:hover:enabled {
 
   .recommendations li {
     padding: 12px;
+    width: 100%;
     border-radius: 10px;
   }
 
@@ -382,7 +386,7 @@ button:hover:enabled {
   .recommendations img {
     width: 100%;
     height: auto;
-    max-height: 200px;       /* ✅ 图片高度控制一下，不然太高了 */
+    max-height: 200px;      
     object-fit: cover;
     border-radius: 8px;
   }
