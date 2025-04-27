@@ -206,17 +206,38 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .contact-wrapper {
-    flex-direction: column; /* ✅ 左右改成上下堆叠 */
-    max-width: 95%; /* ✅ 进一步缩小 */
-    padding: 20px 10px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
   }
 
-  .contact-left, .contact-right {
+  .contact-card {
+    flex-direction: column;
+    min-height: auto; /* 取消固定高度 */
+  }
+
+  .contact-left,
+  .contact-right {
     padding: 20px;
-    margin-bottom: 20px; /* 上下间隔 */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px; /* 手机端字体稍微小点 */
+  }
+
+  .contact-form textarea {
+    min-height: 100px; /* 让输入框高度合理 */
   }
 }
 
