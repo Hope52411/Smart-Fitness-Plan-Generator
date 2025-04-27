@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 .contact-wrapper {
-  padding: 30px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +185,7 @@ export default {
 }
 
 .contact-form textarea {
-  min-height: 120px;
+  min-height: 50px;
   resize: vertical;
 }
 
