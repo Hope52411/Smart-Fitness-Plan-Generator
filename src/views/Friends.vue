@@ -143,7 +143,7 @@ export default {
 
 
 .friends-container {
-  width: 85%;
+  width: 95%;
   max-width: 700px;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
@@ -158,7 +158,7 @@ export default {
 }
 .friends-section {
   margin-top: 20px;
-  width: 85%;
+  width: 95%;
   max-width: 700px;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
