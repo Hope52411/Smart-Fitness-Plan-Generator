@@ -124,8 +124,9 @@ export default {
 .friends-scroll {
   width: 80%;
   max-width: 800px;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   overflow-y: auto; 
+  overflow-x: hidden;
   padding-bottom: 100px;
 }
 
