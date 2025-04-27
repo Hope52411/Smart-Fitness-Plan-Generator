@@ -216,28 +216,12 @@ export default {
 
   .contact-card {
     flex-direction: column;
-    min-height: auto;
+    min-height: 700px;
   }
 
   .contact-left,
   .contact-right {
     padding: 30px;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
-    font-size: 14px; 
-  }
-
-  .contact-form textarea {
-    min-height: 100px;
   }
 }
 
