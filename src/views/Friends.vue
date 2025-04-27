@@ -118,9 +118,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow-y: auto;
-  overflow-x: hidden;
-
+  overflow: hidden;
 }
 
 .friends-scroll {
@@ -133,6 +131,9 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
 
 .friends-container,
