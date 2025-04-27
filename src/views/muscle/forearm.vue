@@ -322,11 +322,9 @@ button:hover:enabled {
 
 @media (max-width: 768px) {
   .muscle-page {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 95%;
-    max-height: none; /* ✅ 删除高度限制 */
-    overflow: visible; /* ✅ 允许正常滚动 */
+    max-width: 60%;
+    max-height: 60%; 
+    overflow: visible; 
   }
 
   .muscle-page h1 {

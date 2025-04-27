@@ -571,6 +571,7 @@ svg path {
   }
 
   .muscle-map-container {
+    border-radius: 12px;
     flex-direction: column;
     align-items: center;
     border-radius: 0;
