@@ -122,7 +122,7 @@ export default {
 }
 
 .friends-scroll {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 80%;
   max-width: 800px;
   height: calc(100vh - 60px);
@@ -181,7 +181,6 @@ export default {
   margin-bottom: 15px;
 }
 
-/* 搜索栏 */
 .search-section {
   display: flex;
   justify-content: center;
@@ -212,7 +211,6 @@ export default {
   background-color: #5563c1;
 }
 
-/* 搜索结果 */
 .results ul,
 .friends-section ul {
   list-style: none;
@@ -272,7 +270,6 @@ export default {
   }
 }
 
-/* 手机端优化 */
 @media (max-width: 768px) {
   .friends-scroll {
     width: 95%;
