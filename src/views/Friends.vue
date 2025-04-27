@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper">
+  <div class="friends-page">
     <div class="friends-scroll slide-in">
     <!-- 添加好友区域 -->
     <div class="friends-container">
@@ -112,7 +112,7 @@ export default {
 </script>
 
 <style scoped>
-.page-wrapper {
+.friends-page {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,20 @@ export default {
 }
 
 
-.friends-container,
+.friends-container {
+  .post-creation {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+}
 .friends-section {
   width: 100%;
   max-width: 600px;
@@ -147,11 +160,10 @@ export default {
   margin-bottom: 20px;
 }
 
-.search-section {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 25px;
+.posts-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .search-section input {
