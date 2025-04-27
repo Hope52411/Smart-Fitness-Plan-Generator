@@ -49,8 +49,7 @@ export default {
   padding: 60px 20px;
   min-height: 100vh;
   box-sizing: border-box;
-  overflow-x: hidden; /* ✅ 防止横向超出 */
-  overflow-y: auto;   /* ✅ 允许纵向滑动 */
+  overflow: hidden; 
 }
 
 .tools-container {
@@ -61,7 +60,9 @@ export default {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
   max-width: 960px;
   width: 100%;
-  margin-bottom: 30px; /* ✅ 新加，让底部留空间，方便滑到底 */
+  margin-bottom: 30px; 
+  height: calc(100vh - 60px);
+  overflow-y: auto;
 }
 
 .page-title {
