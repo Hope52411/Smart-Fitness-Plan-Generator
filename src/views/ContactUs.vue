@@ -159,7 +159,6 @@ export default {
   flex: 1;
   padding: 40px;
   background: #fff;
-  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .contact-form {
@@ -208,31 +207,31 @@ export default {
 /* Responsive */
 @media (max-width: 768px) {
   .contact-wrapper {
-    padding: 10px 20px;
+    padding: 0;
+    height: 100vh; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
+
   .contact-card {
     flex-direction: column;
-    overflow: auto; /* Ensures scrolling for the whole card */
-    max-height: 80vh; /* Limit the height of the card */
+    max-height: 90vh;
+    overflow-y: auto; 
+    width: 90%;
+    margin: 10px 0;
   }
 
   .contact-left,
   .contact-right {
+    flex: none;
+    width: 100%;
     padding: 30px;
   }
 
-  .contact-left,
-  .contact-right {
-    max-height: 100%; /* Ensure they can scroll vertically */
-  }
-
-  .contact-right {
-    padding-bottom: 80px; /* Ensure submit button stays at the bottom */
-  }
-
   .slide-in {
-    animation: none; /* Disable animation on small screens */
+    animation: none;
   }
 }
 
@@ -245,7 +244,6 @@ export default {
     transform: translateY(50px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
