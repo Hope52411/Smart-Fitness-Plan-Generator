@@ -153,7 +153,7 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    height: 140px;
+    height: 100px; 
     padding: 0 15px;
     display: flex;
     align-items: center;
@@ -163,41 +163,25 @@ body {
   .navbar nav ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px 15px;
+    gap: 8px 10px; 
     justify-items: center;
-    padding: 10px 0;
-  }
-
-  .navbar nav ul li {
-    margin: 0;
+    padding: 5px 0;
   }
 
   .navbar nav ul li a {
-    font-size: 15px;
-    padding: 5px 10px;
+    font-size: 14px;
+    padding: 4px 8px;
     white-space: nowrap;
   }
 
   .logout-button {
-    position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
-    padding: 5px 12px;
-    font-size: 13px;
-    background: #ff6b6b;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: background 0.3s, transform 0.2s;
-  }
-
-  .logout-button:hover {
-    background: #ff4c4c;
-    transform: scale(1.05);
+    padding: 4px 10px;
+    font-size: 12px;
   }
 }
+
 
 
 </style>
