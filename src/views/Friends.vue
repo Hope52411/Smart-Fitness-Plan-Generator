@@ -122,6 +122,7 @@ export default {
 }
 
 .friends-scroll {
+  margin-top: 20px;
   width: 80%;
   max-width: 800px;
   height: calc(100vh - 60px);
