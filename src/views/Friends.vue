@@ -122,8 +122,7 @@ export default {
 }
 
 
-.friends-container,
-.friends-section {
+.friends-container {
   width: 100%;
   max-width: 600px;
   background: rgba(255, 255, 255, 0.9);
@@ -141,6 +140,21 @@ export default {
   flex-direction: column;
   gap: 15px;
   margin: 20px auto;
+}
+.friends-section {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: all 0.3s ease;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .friends-container h2,
