@@ -215,7 +215,7 @@ export default {
     flex-direction: column;
     box-sizing: border-box;
     max-width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 1000px;
   }
 
   .contact-card {
