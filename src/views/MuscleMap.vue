@@ -556,10 +556,9 @@ svg path {
 }
 
 @media (max-width: 768px) {
-
   .svg-front,
   .svg-back {
-    width: 100%;
+    width: 50%;
     max-width: 100vw;
     height: auto;
     margin-bottom: 20px;
@@ -574,7 +573,6 @@ svg path {
     border-radius: 12px;
     flex-direction: column;
     align-items: center;
-    border-radius: 0;
     width: 80%; 
     padding: 15px;
   }
