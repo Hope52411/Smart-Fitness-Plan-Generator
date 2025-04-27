@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 .contact-wrapper {
-  padding: 50px 20px;
+  padding: 30px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
