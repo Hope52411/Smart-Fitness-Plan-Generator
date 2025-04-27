@@ -319,4 +319,58 @@ button:hover:enabled {
   border-radius: 8px;
   border: 1px solid #ddd;
 }
+
+@media (max-width: 768px) {
+  .muscle-page {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 95%;
+    max-height: none; 
+    overflow-y: auto;
+  }
+
+  .muscle-page h1 {
+    font-size: 24px;
+  }
+
+  .intro {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .selector-block select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .recommendations h3 {
+    font-size: 20px;
+  }
+
+  .recommendations li {
+    padding: 15px;
+  }
+
+  .recommendations li h4 {
+    font-size: 16px;
+  }
+
+  .recommendations li p {
+    font-size: 14px;
+  }
+
+  .recommendations img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
 </style>
