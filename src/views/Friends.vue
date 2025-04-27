@@ -122,20 +122,7 @@ export default {
 }
 
 
-.friends-container {
-  .post-creation {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px auto;
-}
-}
+.friends-container,
 .friends-section {
   width: 100%;
   max-width: 600px;
@@ -160,10 +147,11 @@ export default {
   margin-bottom: 20px;
 }
 
-.posts-container {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 100px;
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
 }
 
 .search-section input {
@@ -281,17 +269,6 @@ export default {
   height: calc(100vh - 60px);
   overflow-y: auto;
   padding-bottom: 30px;
-}
-
-.community-scroll::-webkit-scrollbar {
-  width: 8px;
-}
-.community-scroll::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-.community-scroll::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .slide-in {
