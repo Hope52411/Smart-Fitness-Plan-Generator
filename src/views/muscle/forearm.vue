@@ -313,8 +313,10 @@ button:hover:enabled {
 }
 
 .recommendations img {
-  width: 400px;
-  height: 250px;
+  width:100%;
+  max-width: 400px;
+  height:100%;
+  max-height: 250px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #ddd;
