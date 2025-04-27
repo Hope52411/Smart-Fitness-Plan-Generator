@@ -137,6 +137,10 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px auto;
 }
 
 .friends-container h2,
