@@ -126,7 +126,7 @@ export default {
   max-width: 800px;
   height: calc(100vh - 60px);
   overflow-y: auto; 
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 .friends-scroll::-webkit-scrollbar {
