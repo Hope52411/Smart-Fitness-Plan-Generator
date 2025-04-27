@@ -206,13 +206,17 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .contact-wrapper {
     padding: 20px;
+    height: 100vh; /* 视口高度 */
+    overflow-y: auto; /* 开启竖向滚动 */
   }
+  
 
   .contact-card {
     flex-direction: column;
+    min-height: 700px;
   }
 
   .contact-left,
