@@ -1,34 +1,44 @@
 <template>
   <div id="bgimg">
     <div id="poster">
-      <el-form class="login-container" label-position="left" label-width="0px">
-        <h3 class="login_title">Reset Password</h3>
+      <el-form class="reset-container" label-position="left" label-width="0px">
+        <h3 class="reset-title">Reset Password</h3>
+
         <el-form-item>
           <el-input
-            type="password"
             v-model="newPassword"
+            type="password"
             autocomplete="off"
             placeholder="Enter new password"
             prefix-icon="el-icon-lock"
-          ></el-input>
+          />
         </el-form-item>
+
         <el-form-item>
           <el-input
-            type="password"
             v-model="confirmPassword"
+            type="password"
             autocomplete="off"
             placeholder="Confirm new password"
             prefix-icon="el-icon-lock"
-          ></el-input>
+          />
         </el-form-item>
-        <el-form-item style="width: 100%;">
+
+        <el-form-item>
           <el-button
+            class="reset-btn"
             type="primary"
-            style="width: 100%; background: #505458; border: none"
+            :loading="loading"
             @click="resetPassword"
-          >Reset Password</el-button>
+          >
+            Reset Password
+          </el-button>
         </el-form-item>
-        <el-button type="text" @click="backToLogin">Back to Login</el-button>
+
+        <div class="reset-footer">
+          <el-button type="text" @click="backToLogin">Back to Login</el-button>
+        </div>
+
         <p v-if="message" class="info-message">{{ message }}</p>
       </el-form>
     </div>
@@ -45,11 +55,11 @@ export default {
       confirmPassword: "",
       token: "",
       message: "",
+      loading: false,
     };
   },
   mounted() {
-    // ✅ Correct way for history mode
-    const token = new URLSearchParams(window.location.search).get('token');
+    const token = new URLSearchParams(window.location.search).get("token");
     this.token = token;
     console.log("✅ Extracted token:", this.token);
   },
@@ -60,17 +70,32 @@ export default {
         return;
       }
 
-      console.log("🔹 Sending reset request with token:", this.token);
+      this.loading = true;
+      this.message = "";
 
       try {
-        const response = await axios.post("https://api.hope52411.tech/auth/reset-password", {
-          token: this.token,
-          newPassword: this.newPassword,
-        });
-        this.message = "Password reset successful! You can now log in.";
+        const response = await axios.post(
+          "https://api.hope52411.tech/auth/reset-password",
+          {
+            token: this.token,
+            newPassword: this.newPassword,
+          }
+        );
+
+        this.message = "🎉 Password reset successful! Redirecting to login...";
+        setTimeout(() => {
+          this.backToLogin();
+        }, 2000);
       } catch (error) {
         console.error("❌ Reset Password Error:", error.response);
-        this.message = error.response?.data || "Failed to reset password. Please try again.";
+        if (error.response && error.response.data) {
+          this.message =
+            error.response.data.message || "Failed to reset password.";
+        } else {
+          this.message = "Failed to reset password. Please try again.";
+        }
+      } finally {
+        this.loading = false;
       }
     },
     backToLogin() {
@@ -81,20 +106,62 @@ export default {
 </script>
 
 <style scoped>
+#bgimg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("~@/assets/bgimg.png") no-repeat center center/cover;
+}
+
 #poster {
   background-position: center;
-  height: 100%;
   width: 100%;
-  background-size: cover;
-  position: fixed;
+  max-width: 350px;
+  padding: 35px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 25px #cac6c6;
 }
-body {
-  margin: 0px;
-  padding: 0px;
+
+.reset-container {
+  width: 100%;
 }
+
+.reset-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.reset-btn {
+  width: 100%;
+  background: linear-gradient(45deg, #45484d, #8e9398);
+  border: none;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.reset-btn:hover {
+  background: linear-gradient(45deg, #8e9398, #45484d);
+  transform: scale(1.05);
+}
+
+.reset-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 .info-message {
   text-align: center;
   color: #606266;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 14px;
 }
 </style>
