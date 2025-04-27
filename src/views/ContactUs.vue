@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 .contact-wrapper {
-  padding: 10px 20px;
+  padding: 100px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +206,10 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 10px 20px;
+  }
   .contact-card {
     flex-direction: column;
   }
