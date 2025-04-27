@@ -1,10 +1,6 @@
 <template>
     <div class="tool-container">
         <div class="tool-card">
-            <button class="back-button" @click="goBack">
-                <i class="fas fa-arrow-left"></i> Back to Tools
-            </button>
-
             <h2 class="tool-title">Calorie Calculator</h2>
             <p class="tool-subtitle">Estimate your daily calorie needs</p>
 

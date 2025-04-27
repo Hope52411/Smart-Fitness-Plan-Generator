@@ -1,10 +1,6 @@
 <template>
     <div class="tool-container">
         <div class="tool-card">
-            <button class="back-button" @click="goBack">
-                <i class="fas fa-arrow-left"></i> Back to Tools
-            </button>
-
             <h2 class="tool-title">Water Intake Calculator</h2>
             <p class="tool-subtitle">Estimate your daily hydration needs</p>
 
@@ -33,7 +29,7 @@ export default {
     methods: {
         calculateWater() {
             if (!this.weight || this.weight <= 0) return;
-            this.result = Math.round(this.weight * 35); // 常见推荐公式：每公斤体重 × 35ml
+            this.result = Math.round(this.weight * 35);
         },
         goBack() {
             this.$router.push("/home/tools");
