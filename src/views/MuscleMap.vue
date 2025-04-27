@@ -571,7 +571,7 @@ svg path {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%; /* ✅ 再宽一点，不然太窄 */
+    width: 80%; 
     max-width: 95vw;
     padding: 15px;
     border-radius: 12px;
