@@ -118,7 +118,9 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
 
 .friends-scroll {
