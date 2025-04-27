@@ -1,5 +1,6 @@
 <template>
   <div class="page-wrapper">
+    <div class="community-scroll slide-in">
     <!-- 添加好友区域 -->
     <div class="friends-container">
       <h2>👥 Add New Friends</h2>
@@ -34,6 +35,7 @@
         </li>
       </ul>
     </div>
+  </div>
   </div>
 </template>
 
@@ -260,6 +262,29 @@ export default {
 
 .friends-section button:hover {
   background-color: #1ba886;
+}
+
+.community-scroll {
+  width: 80%;
+  max-width: 800px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding-bottom: 30px;
+}
+
+.community-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.community-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.community-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.slide-in {
+  animation: slideInUp 0.6s ease-out both;
 }
 
 @media (max-width: 768px) {
