@@ -67,7 +67,7 @@ export default {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   max-width: 450px;
   width: 100%;
-  padding: 40px 30px;
+  padding: 20px 30px;
   text-align: center;
   animation: fadeIn 0.6s ease-out;
 }
