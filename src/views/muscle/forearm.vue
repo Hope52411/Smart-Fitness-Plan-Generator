@@ -201,7 +201,6 @@ export default {
 .muscle-page {
   width: 85%;
   max-width: 800px;
-  margin: 40px auto;
   padding: 40px;
   background: rgba(255, 255, 255, 0.92);
   border-radius: 16px;
@@ -331,7 +330,7 @@ button:hover:enabled {
     overflow-y: visible;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.95); /* 更干净的白色背景 */
+    background: rgba(255, 255, 255, 0.95); 
   }
 
   .muscle-page h1 {
@@ -422,7 +421,7 @@ button:hover:enabled {
   }
 
   .recommendations img {
-    width: 100%;
+    width: 70%;
     height: auto;
     max-height: 200px;
     object-fit: cover;
