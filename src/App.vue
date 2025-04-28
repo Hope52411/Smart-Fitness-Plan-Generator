@@ -56,7 +56,7 @@ nav {
     }
   }
 }
-/* App.vue 或 main.css / main.scss */
+
 html, body {
   overflow-x: hidden;
   overflow-y: hidden;
