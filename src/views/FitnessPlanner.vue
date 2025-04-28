@@ -244,7 +244,7 @@ async sendMessage() {
 
   .chat-box {
     flex: 1;        
-    min-height: 400px; 
+    min-height: 200px; 
     padding: 6px;
     overflow-y: auto; 
   }
