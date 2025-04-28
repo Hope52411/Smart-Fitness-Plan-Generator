@@ -218,7 +218,6 @@ async sendMessage() {
   transform: scale(1.05);
 }
 
-/* 动画过渡效果 */
 .slide-up-enter-active {
   transition: transform 0.5s;
 }
@@ -255,6 +254,7 @@ async sendMessage() {
   }
 
   .chat-input {
+    width: auto;
     font-size: 14px;
     padding: 8px;
   }
