@@ -253,18 +253,6 @@ async sendMessage() {
     padding: 8px;
   }
 
-  .chat-input, .send-button {
-    width: 100%;  
-    margin-bottom: 10px;  
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  
-  .input-container {
-    flex-direction: column;
-    gap: 6px;
-  }
-
   .input-container input,
   .input-container button {
     width: 100%;
