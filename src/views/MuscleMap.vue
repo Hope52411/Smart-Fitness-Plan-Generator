@@ -576,7 +576,7 @@ svg path {
     align-items: center;
     width: 90%;
     max-width: 100%;
-    padding: 15px;
+    padding: 3px;
     margin-top: 3px;
     border-radius: 8px;
     overflow-y: auto;
@@ -584,12 +584,12 @@ svg path {
     background-color: rgba(255, 255, 255, 0.85);
   }
 
-}
-
-.muscle-map-scroll {
+  .muscle-map-scroll {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
+}
+
 }
 </style>
