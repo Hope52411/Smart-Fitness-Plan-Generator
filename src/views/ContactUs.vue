@@ -27,7 +27,7 @@
           <a href="https://www.facebook.com/profile.php?id=61575126306358"><i class="fab fa-facebook-f"></i></a>
           <a href="https://x.com/Hope52411"><i class="fab fa-twitter"></i></a>
           <a href="https://www.instagram.com/james_xuee/"><i class="fab fa-instagram"></i></a>
-          <a href="www.linkedin.com/in/xiangze-xue"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/xiangze-xue"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
 
@@ -81,12 +81,13 @@ export default {
 
 <style scoped>
 .contact-wrapper {
+  height: 100vh;
+  overflow-y: auto;
   padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 80px;
 }
 
 .contact-card {
@@ -96,8 +97,9 @@ export default {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
 }
-
 
 .contact-left {
   flex: 1;
@@ -176,6 +178,7 @@ export default {
   font-size: 15px;
   outline: none;
   transition: box-shadow 0.2s, border-color 0.2s;
+  width: 100%;
 }
 
 .contact-form input:focus,
@@ -185,7 +188,7 @@ export default {
 }
 
 .contact-form textarea {
-  min-height: 30px;
+  min-height: 100px;
   resize: vertical;
 }
 
@@ -193,7 +196,7 @@ export default {
   background: linear-gradient(45deg, #667eea, #764ba2);
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 20px;
   font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
@@ -205,10 +208,12 @@ export default {
   transform: scale(1.05);
 }
 
+/* Mobile Responsive */
 @media (max-width: 600px) {
   .contact-wrapper {
+    height: 100vh;
+    overflow-y: auto;
     padding: 30px 15px;
-    min-height: 100vh;
     box-sizing: border-box;
   }
 
@@ -293,6 +298,7 @@ export default {
   }
 }
 
+/* Entrance animation */
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
 }
@@ -302,7 +308,6 @@ export default {
     transform: translateY(50px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
