@@ -1,9 +1,6 @@
 <template>
   <div class="app-container">
-    <!-- ✅ 背景只显示一次，不包住所有内容 -->
     <div id="bgimg2"></div>
-
-    <!-- ✅ 页面内容区 -->
     <div class="main-content">
       <!-- Top Navigation Bar -->
       <header class="navbar">
@@ -22,7 +19,6 @@
         </nav>
       </header>
 
-      <!-- ✅ 子页面会在这里展示 -->
       <router-view />
     </div>
   </div>
@@ -39,13 +35,11 @@ export default {
   },
   methods: {
     logout() {
-      // ✅ 清除 localStorage 中的登录状态信息
       localStorage.clear();
 
-      // ✅ （可选）如果你用了 cookie-based session，也可以通知后端退出
       fetch('/api/logout', {
         method: 'POST',
-        credentials: 'include', // 保持 cookie
+        credentials: 'include', 
       })
         .then(response => {
           if (response.ok) {
@@ -58,7 +52,6 @@ export default {
           console.error("❌ Logout error:", error);
         });
 
-      // ✅ 通知父组件 + 重定向回首页（登录页）
       this.$emit("user-logged-out");
       this.$router.push("/");
     },
@@ -154,7 +147,7 @@ body {
 @media (max-width: 768px) {
   .navbar {
     height: 80px; 
-    padding: 0 15px;
+    padding: 2px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
