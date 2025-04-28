@@ -252,12 +252,5 @@ async sendMessage() {
     font-size: 14px;
     padding: 8px;
   }
-
-  .input-container input,
-  .input-container button {
-    width: 100%;
-  }
 }
-
-
 </style>
