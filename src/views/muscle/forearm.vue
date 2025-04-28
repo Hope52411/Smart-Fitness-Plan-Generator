@@ -199,7 +199,7 @@ export default {
 
 <style scoped>
 .muscle-page {
-  max-width: 400px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   background: rgba(255, 255, 255, 0.92);
@@ -326,7 +326,6 @@ button:hover:enabled {
   margin: 0 auto;
 }
 
-/* ------------------ 📱 手机端优化 ------------------ */
 @media (max-width: 600px) {
   .muscle-page {
     padding: 15px;
