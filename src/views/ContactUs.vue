@@ -81,14 +81,17 @@ export default {
 
 <style scoped>
 .contact-wrapper {
-  height: 100vh;
+  padding-top: 100px;
+  height: calc(100vh - 100px);
   overflow-y: auto;
-  padding: 80px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  align-items: flex-start; 
 }
+
 
 .contact-card {
   background: white;
