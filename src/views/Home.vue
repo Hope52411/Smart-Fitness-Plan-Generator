@@ -153,7 +153,7 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    height: 90px; 
+    height: 80px; 
     padding: 0 15px;
     display: flex;
     align-items: center;
