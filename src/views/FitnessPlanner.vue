@@ -243,10 +243,8 @@ async sendMessage() {
   }
 
   .chat-box {
-    flex: 1;        
-    min-height: 200px; 
+    height: 400px; 
     padding: 6px;
-    overflow-y: auto; 
   }
 
   .message-user p,
