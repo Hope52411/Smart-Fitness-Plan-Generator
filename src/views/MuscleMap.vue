@@ -534,7 +534,7 @@ svg path {
   height: auto;
   margin: 20px auto 0;
   display: flex;
-  flex-direction: row;    
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -556,6 +556,7 @@ svg path {
 }
 
 @media (max-width: 768px) {
+
   .svg-front,
   .svg-back {
     width: 150%;
@@ -566,6 +567,7 @@ svg path {
   .instruction-text {
     font-size: 16px;
     padding: 0 10px;
+    margin-top: 3px;
   }
 
   .muscle-map-container {
@@ -575,11 +577,11 @@ svg path {
     width: 90%;
     max-width: 100%;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 3px;
     border-radius: 8px;
     overflow-y: auto;
     max-height: calc(100vh - 120px);
-    background-color: rgba(255, 255, 255, 0.85); 
+    background-color: rgba(255, 255, 255, 0.85);
   }
 
 }
@@ -590,5 +592,4 @@ svg path {
   -webkit-overflow-scrolling: touch;
   width: 100%;
 }
-
 </style>
