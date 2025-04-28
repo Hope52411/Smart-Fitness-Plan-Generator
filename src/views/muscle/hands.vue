@@ -154,124 +154,173 @@ export default {
 
 <style scoped>
 .muscle-page {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.92);
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    font-family: 'Segoe UI', sans-serif;
-    max-height: 700px;
-    overflow-y: auto;
-    overflow-x: hidden;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .muscle-page h1 {
-    font-size: 28px;
-    color: #1f2937;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 26px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .intro {
-    margin-bottom: 30px;
-    font-size: 18px;
-    color: #4b5563;
-    text-align: center;
-    line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #4b5563;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 10px;
 }
 
 .selectors {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
 }
 
 .selector-block {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
 }
 
 .selector-block label {
-    margin-bottom: 8px;
-    font-weight: bold;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
 
 .selector-block select {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #cbd5e1;
-    background-color: #f9fafb;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #f9fafb;
 }
 
 button {
-    margin-top: 10px;
-    align-self: flex-start;
-    background-color: #10b981;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
+  margin-top: 10px;
+  align-self: flex-start;
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:disabled {
-    background-color: #9ca3af;
-    cursor: not-allowed;
+  background-color: #9ca3af;
+  cursor: not-allowed;
 }
 
 button:hover:enabled {
-    background-color: #059669;
+  background-color: #059669;
 }
 
 .recommendations {
-    margin-top: 40px;
+  margin-top: 30px;
+  padding: 0 10px;
 }
 
 .recommendations h3 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #111827;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #111827;
+  text-align: center;
 }
 
 .recommendations ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .recommendations li {
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .recommendations li h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #1f2937;
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #1f2937;
 }
 
 .recommendations li p {
-    font-size: 15px;
-    color: #4b5563;
-    margin-bottom: 10px;
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 10px;
 }
 
 .recommendations img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------------ 📱 手机端优化 ------------------ */
+@media (max-width: 600px) {
+  .muscle-page {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+  }
+
+  .muscle-page h1 {
+    font-size: 22px;
+  }
+
+  .intro {
+    font-size: 15px;
+  }
+
+  .selectors {
+    gap: 12px;
+  }
+
+  .selector-block select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .recommendations li {
+    padding: 14px;
+  }
+
+  .recommendations li h4 {
+    font-size: 16px;
+  }
+
+  .recommendations li p {
+    font-size: 13px;
+  }
 }
 </style>

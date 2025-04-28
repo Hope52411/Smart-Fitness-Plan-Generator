@@ -199,7 +199,7 @@ export default {
 
 <style scoped>
 .muscle-page {
-  max-width: 800px;
+  max-width: 400px;
   margin: 20px auto;
   padding: 20px;
   background: rgba(255, 255, 255, 0.92);
