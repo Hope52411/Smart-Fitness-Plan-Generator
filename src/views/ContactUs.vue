@@ -89,9 +89,8 @@ export default {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
-
 
 .contact-card {
   background: white;
@@ -102,6 +101,7 @@ export default {
   overflow: hidden;
   width: 100%;
   max-width: 1100px;
+  box-sizing: border-box;
 }
 
 .contact-left {
@@ -165,6 +165,7 @@ export default {
   flex: 1;
   padding: 40px;
   background: #fff;
+  box-sizing: border-box;
 }
 
 .contact-form {
@@ -182,6 +183,7 @@ export default {
   outline: none;
   transition: box-shadow 0.2s, border-color 0.2s;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form input:focus,
@@ -204,6 +206,7 @@ export default {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .contact-form button:hover {
@@ -211,12 +214,12 @@ export default {
   transform: scale(1.05);
 }
 
-/* Mobile Responsive */
 @media (max-width: 600px) {
   .contact-wrapper {
-    height: 100vh;
+    padding-top: 100px;
+    height: calc(100vh - 100px);
     overflow-y: auto;
-    padding: 30px 15px;
+    padding: 20px 10px;
     box-sizing: border-box;
   }
 
@@ -225,11 +228,13 @@ export default {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     overflow: hidden;
+    width: 100%;
   }
 
   .contact-left,
   .contact-right {
-    padding: 30px 20px;
+    padding: 30px 15px;
+    box-sizing: border-box;
   }
 
   .contact-left .title {
@@ -280,7 +285,9 @@ export default {
     font-size: 16px;
     padding: 16px;
     width: 100%;
+    max-width: 100%;
     border-radius: 10px;
+    box-sizing: border-box;
   }
 
   .contact-form textarea {
@@ -301,7 +308,6 @@ export default {
   }
 }
 
-/* Entrance animation */
 .slide-in {
   animation: slideInUp 0.6s ease-out both;
 }
@@ -317,3 +323,4 @@ export default {
   }
 }
 </style>
+
