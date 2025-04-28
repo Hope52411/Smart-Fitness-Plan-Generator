@@ -254,9 +254,8 @@ async sendMessage() {
   }
 
   .chat-input {
-    width: auto;
     font-size: 14px;
-    padding: 8px;
+    padding: 8px 12px;
   }
 
   .send-button {
