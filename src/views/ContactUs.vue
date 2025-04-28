@@ -233,11 +233,11 @@ export default {
   .contact-form input,
   .contact-form textarea,
   .contact-form button {
-    font-size: 14px; /* 手机端字体稍微小点 */
+    font-size: 14px;
   }
 
   .contact-form textarea {
-    min-height: 100px; /* 让输入框高度合理 */
+    min-height: 100px;
   }
 }
 
