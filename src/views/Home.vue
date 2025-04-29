@@ -4,7 +4,7 @@
     <div class="main-content">
       <!-- Top Navigation Bar -->
       <header class="navbar">
-        <nav class="nav-content">
+        <nav class="nav-wrapper">
           <ul class="nav-links">
             <li><router-link to="/home" active-class="active">Home</router-link></li>
             <li><router-link to="/home/fitness-planner" active-class="active">Fitness Planner</router-link></li>
@@ -13,13 +13,11 @@
             <li><router-link to="/home/community" active-class="active">Community</router-link></li>
             <li><router-link to="/home/contact" active-class="active">Contact Me</router-link></li>
           </ul>
-          <div class="nav-buttons">
-            <button v-if="showInstallButton" class="install-button" @click="installApp">
-              📥 Install App
-            </button>
-            <button class="logout-button" @click="logout">
-              Log Out
-            </button>
+
+          <div class="nav-actions">
+            <!-- Install button always visible -->
+            <button class="action-button install" @click="installApp">📥 Install App</button>
+            <button class="action-button logout" @click="logout">Log Out</button>
           </div>
         </nav>
       </header>
@@ -31,53 +29,42 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
       selectedPart: null,
-      deferredPrompt: null,
-      showInstallButton: false,
+      deferredPrompt: null, // Save install prompt event
     };
   },
   created() {
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       this.deferredPrompt = e;
-      this.showInstallButton = true;
     });
   },
   methods: {
     logout() {
       localStorage.clear();
-      fetch('/api/logout', {
-        method: 'POST',
-        credentials: 'include',
-      })
-      .then(response => {
-        if (response.ok) {
-          console.log("✅ Successfully logged out");
-        } else {
-          console.error("❌ Failed to log out from the server");
-        }
-      })
-      .catch(error => {
-        console.error("❌ Logout error:", error);
-      });
+      fetch('/api/logout', { method: 'POST', credentials: 'include' })
+        .then(response => {
+          if (response.ok) console.log("✅ Successfully logged out");
+          else console.error("❌ Failed to log out from the server");
+        })
+        .catch(error => console.error("❌ Logout error:", error));
+
       this.$emit("user-logged-out");
       this.$router.push("/");
     },
     installApp() {
       if (this.deferredPrompt) {
         this.deferredPrompt.prompt();
-        this.deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the install prompt');
-          } else {
-            console.log('User dismissed the install prompt');
-          }
+        this.deferredPrompt.userChoice.then(choice => {
+          if (choice.outcome === 'accepted') console.log('User accepted install prompt');
+          else console.log('User dismissed install prompt');
           this.deferredPrompt = null;
-          this.showInstallButton = false;
         });
+      } else {
+        alert('Installation is not available at the moment.');
       }
     }
   }
@@ -109,20 +96,22 @@ body {
   z-index: -1;
 }
 
+/* Navigation bar */
 .navbar {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 8px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 20px;
 }
 
-.nav-content {
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Navigation links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -150,41 +139,40 @@ body {
   color: #ffe4b5;
 }
 
-.nav-buttons {
+/* Action buttons (Install + Logout) */
+.nav-actions {
   display: flex;
   align-items: center;
 }
 
-.logout-button,
-.install-button {
+.action-button {
   background: #42b983;
   color: white;
   border: none;
   padding: 10px 20px;
   margin-left: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
 }
 
-.logout-button {
+.action-button.logout {
   background: #ff6b6b;
 }
 
-.logout-button:hover {
+.action-button.logout:hover {
   background: #ff4757;
 }
 
-.install-button:hover {
+.action-button.install:hover {
   background: #369c72;
 }
 
-/* Mobile view adjustments */
+/* Responsive design for mobile */
 @media (max-width: 768px) {
-  .nav-content {
+  .nav-wrapper {
     flex-direction: column;
-    align-items: center;
   }
 
   .nav-links {
@@ -193,13 +181,12 @@ body {
     margin-bottom: 10px;
   }
 
-  .nav-buttons {
+  .nav-actions {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .logout-button,
-  .install-button {
+  .action-button {
     margin: 5px;
     padding: 8px 16px;
     font-size: 14px;
