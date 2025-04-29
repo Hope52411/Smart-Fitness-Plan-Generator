@@ -7,11 +7,11 @@
         <nav class="nav-wrapper">
           <ul class="nav-links">
             <li><router-link to="/home" active-class="active">Home</router-link></li>
-            <li><router-link to="/home/fitness-planner" active-class="active">Fitness Planner</router-link></li>
+            <li><router-link to="/home/fitness-planner" active-class="active">AI Bot</router-link></li>
             <li><router-link to="/home/tools" active-class="active">Tools</router-link></li>
             <li><router-link to="/home/friends" active-class="active">Friends</router-link></li>
             <li><router-link to="/home/community" active-class="active">Community</router-link></li>
-            <li><router-link to="/home/contact" active-class="active">Contact Me</router-link></li>
+            <li><router-link to="/home/contact" active-class="active">Contact</router-link></li>
           </ul>
 
           <div class="nav-actions">
