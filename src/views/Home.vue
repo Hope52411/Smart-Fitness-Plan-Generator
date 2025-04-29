@@ -58,14 +58,17 @@ export default {
       if (this.deferredPrompt) {
         this.deferredPrompt.prompt();
         this.deferredPrompt.userChoice.then(choice => {
-          if (choice.outcome === 'accepted') console.log('User accepted install prompt');
-          else console.log('User dismissed install prompt');
-          this.deferredPrompt = null;
+          if (choice.outcome === 'accepted') {
+            console.log('User accepted install prompt');
+          } else {
+            console.log('User dismissed install prompt');
+          }
         });
       } else {
-        alert('Installation is not available at the moment.');
+        alert('Installation is not available. Please use your browser menu to install manually.');
       }
     }
+
   }
 };
 </script>
@@ -169,8 +172,9 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 4px 10px; 
+    padding: 4px 10px;
   }
+
   .nav-wrapper {
     display: flex;
     flex-direction: row;
@@ -210,8 +214,7 @@ body {
   .action-button {
     font-size: 16px;
     padding: 10px 20px;
-    width: 90px; 
+    width: 90px;
   }
 }
-
 </style>
