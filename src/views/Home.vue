@@ -205,7 +205,7 @@ body {
 
   .action-button {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 2px 2px;
     width: 90px; 
   }
 }
