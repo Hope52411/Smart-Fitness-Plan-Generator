@@ -188,10 +188,10 @@ body {
   .nav-actions {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     justify-content: flex-start;
-    margin-top: -10px;
+    margin-top: -15px;
   }
 
   .nav-links li {
@@ -200,7 +200,7 @@ body {
 
   .nav-links li a {
     font-size: 16px;
-    padding: 6px 12px;
+    padding: 6px 6px;
   }
 
   .action-button {
