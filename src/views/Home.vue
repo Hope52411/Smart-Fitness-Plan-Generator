@@ -181,7 +181,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-auto-rows: auto;
-    gap: 10px 20px;
+    gap: 10px 10px;
     justify-content: center;
   }
 
@@ -205,7 +205,7 @@ body {
 
   .action-button {
     font-size: 16px;
-    padding: 2px 2px;
+    padding: 10px 20px;
     width: 90px; 
   }
 }
