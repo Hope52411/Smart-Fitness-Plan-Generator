@@ -15,9 +15,8 @@
           </ul>
 
           <div class="nav-actions">
-            <!-- Install button always visible -->
-            <button class="action-button install" @click="installApp">Install</button>
             <button class="action-button logout" @click="logout">Logout</button>
+            <button class="action-button install" @click="installApp">Install</button>
           </div>
         </nav>
       </header>
@@ -192,6 +191,7 @@ body {
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
+    margin-top: -10px;
   }
 
   .nav-links li {
@@ -206,7 +206,7 @@ body {
   .action-button {
     font-size: 16px;
     padding: 10px 20px;
-    width: 100px; 
+    width: 90px; 
   }
 }
 
