@@ -168,13 +168,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 4px 10px; 
+  }
   .nav-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
-    height: 16.6%;
     gap: 20px;
   }
 
