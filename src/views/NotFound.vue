@@ -1,7 +1,7 @@
 <template>
     <div class="not-found">
       <h1>404 - not found 😢</h1>
-      <p>你访问的肌肉页面不存在或拼写有误。</p>
+      <p>错误。</p>
     </div>
   </template>
   
