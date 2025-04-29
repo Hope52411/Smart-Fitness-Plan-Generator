@@ -153,7 +153,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
-  width: 140px; /* 统一按钮宽度 */
+  width: 100px;
 }
 
 .action-button.logout {
