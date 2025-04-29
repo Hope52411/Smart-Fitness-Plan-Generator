@@ -16,7 +16,7 @@
 
           <div class="nav-actions">
             <!-- Install button always visible -->
-            <button class="action-button install" @click="installApp">Install App</button>
+            <button class="action-button install" @click="installApp">Install</button>
             <button class="action-button logout" @click="logout">Logout</button>
           </div>
         </nav>
@@ -199,14 +199,14 @@ body {
   }
 
   .nav-links li a {
-    font-size: 13px;
+    font-size: 16px;
     padding: 6px 12px;
   }
 
   .action-button {
-    font-size: 13px;
+    font-size: 16px;
     padding: 10px 20px;
-    width: 110px; 
+    width: 100px; 
   }
 }
 
