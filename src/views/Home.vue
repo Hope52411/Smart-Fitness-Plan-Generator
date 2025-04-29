@@ -96,7 +96,7 @@ body {
   z-index: -1;
 }
 
-/* --- Navigation Bar --- */
+/* Navigation Bar */
 .navbar {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -138,7 +138,6 @@ body {
   color: #ffe4b5;
 }
 
-/* Action buttons */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -154,6 +153,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
+  width: 140px; /* 统一按钮宽度 */
 }
 
 .action-button.logout {
@@ -168,38 +168,45 @@ body {
   background: #369c72;
 }
 
-/* --- Mobile view --- */
 @media (max-width: 768px) {
   .nav-wrapper {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 
-  /* Merge links + buttons into a grid */
-  .nav-links,
-  .nav-actions {
-    display: contents;
-  }
-
-  .nav-wrapper > * {
+  .nav-links {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
     gap: 10px 20px;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
   }
 
-  .nav-links li,
-  .nav-actions button {
+  .nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .nav-links li {
     margin: 0;
   }
 
-  .nav-links li a,
-  .action-button {
+  .nav-links li a {
     font-size: 16px;
     padding: 6px 12px;
+  }
+
+  .action-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 140px; 
   }
 }
 
