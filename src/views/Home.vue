@@ -16,8 +16,8 @@
 
           <div class="nav-actions">
             <!-- Install button always visible -->
-            <button class="action-button install" @click="installApp">📥 Install App</button>
-            <button class="action-button logout" @click="logout">Log Out</button>
+            <button class="action-button install" @click="installApp">Install App</button>
+            <button class="action-button logout" @click="logout">Logout</button>
           </div>
         </nav>
       </header>
@@ -96,7 +96,6 @@ body {
   z-index: -1;
 }
 
-/* Navigation bar */
 .navbar {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -111,7 +110,6 @@ body {
   align-items: center;
 }
 
-/* Navigation links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -139,7 +137,6 @@ body {
   color: #ffe4b5;
 }
 
-/* Action buttons (Install + Logout) */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -169,27 +166,33 @@ body {
   background: #369c72;
 }
 
-/* Responsive design for mobile */
+/* Mobile view */
 @media (max-width: 768px) {
   .nav-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
-  .nav-links {
-    flex-wrap: wrap;
+  .nav-links,
+  .nav-actions {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px 20px;
     justify-content: center;
     margin-bottom: 10px;
   }
 
-  .nav-actions {
-    flex-wrap: wrap;
-    justify-content: center;
+  .nav-links li,
+  .nav-actions button {
+    margin: 0;
   }
 
+  .nav-links li a,
   .action-button {
-    margin: 5px;
+    font-size: 16px;
     padding: 8px 16px;
-    font-size: 14px;
+    text-align: center;
   }
 }
+
 </style>
