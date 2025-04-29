@@ -177,6 +177,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
+    padding: 8px 20px;
     gap: 20px;
   }
 
