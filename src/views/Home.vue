@@ -96,6 +96,7 @@ body {
   z-index: -1;
 }
 
+/* --- Navigation Bar --- */
 .navbar {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -137,6 +138,7 @@ body {
   color: #ffe4b5;
 }
 
+/* Action buttons */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -166,19 +168,26 @@ body {
   background: #369c72;
 }
 
-/* Mobile view */
+/* --- Mobile view --- */
 @media (max-width: 768px) {
   .nav-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Merge links + buttons into a grid */
   .nav-links,
   .nav-actions {
+    display: contents;
+  }
+
+  .nav-wrapper > * {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(4, auto);
     gap: 10px 20px;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-bottom: 10px;
   }
 
@@ -190,8 +199,7 @@ body {
   .nav-links li a,
   .action-button {
     font-size: 16px;
-    padding: 8px 16px;
-    text-align: center;
+    padding: 6px 12px;
   }
 }
 
