@@ -180,7 +180,7 @@ body {
 
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     grid-auto-rows: auto;
     gap: 10px 20px;
     justify-content: center;
@@ -199,12 +199,12 @@ body {
   }
 
   .nav-links li a {
-    font-size: 11px;
+    font-size: 13px;
     padding: 6px 12px;
   }
 
   .action-button {
-    font-size: 11px;
+    font-size: 13px;
     padding: 10px 20px;
     width: 110px; 
   }
