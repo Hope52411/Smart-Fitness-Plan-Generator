@@ -199,14 +199,14 @@ body {
   }
 
   .nav-links li a {
-    font-size: 16px;
+    font-size: 11px;
     padding: 6px 12px;
   }
 
   .action-button {
-    font-size: 16px;
+    font-size: 11px;
     padding: 10px 20px;
-    width: 100px; 
+    width: 110px; 
   }
 }
 
