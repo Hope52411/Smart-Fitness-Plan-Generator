@@ -174,7 +174,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
-    gap: 30px;
+    height: 16.6%;
+    gap: 20px;
   }
 
   .nav-links {
