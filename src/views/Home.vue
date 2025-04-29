@@ -4,21 +4,23 @@
     <div class="main-content">
       <!-- Top Navigation Bar -->
       <header class="navbar">
-        <nav>
-          <ul>
+        <nav class="nav-content">
+          <ul class="nav-links">
             <li><router-link to="/home" active-class="active">Home</router-link></li>
             <li><router-link to="/home/fitness-planner" active-class="active">Fitness Planner</router-link></li>
             <li><router-link to="/home/tools" active-class="active">Tools</router-link></li>
             <li><router-link to="/home/friends" active-class="active">Friends</router-link></li>
             <li><router-link to="/home/community" active-class="active">Community</router-link></li>
             <li><router-link to="/home/contact" active-class="active">Contact Me</router-link></li>
-            <li>
-              <button class="logout-button" @click="logout">Log Out</button>
-              <button v-if="showInstallButton" class="install-button" @click="installApp">
-                📥 Install App
-              </button>
-            </li>
           </ul>
+          <div class="nav-buttons">
+            <button v-if="showInstallButton" class="install-button" @click="installApp">
+              📥 Install App
+            </button>
+            <button class="logout-button" @click="logout">
+              Log Out
+            </button>
+          </div>
         </nav>
       </header>
 
@@ -33,21 +35,20 @@ export default {
   data() {
     return {
       selectedPart: null,
-      deferredPrompt: null,       // Save install prompt event
-      showInstallButton: false,   // Control install button visibility
+      deferredPrompt: null,
+      showInstallButton: false,
     };
   },
   created() {
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       this.deferredPrompt = e;
-      this.showInstallButton = true; // Show install button when available
+      this.showInstallButton = true;
     });
   },
   methods: {
     logout() {
       localStorage.clear();
-
       fetch('/api/logout', {
         method: 'POST',
         credentials: 'include',
@@ -62,7 +63,6 @@ export default {
       .catch(error => {
         console.error("❌ Logout error:", error);
       });
-
       this.$emit("user-logged-out");
       this.$router.push("/");
     },
@@ -115,66 +115,65 @@ body {
   -webkit-backdrop-filter: blur(10px);
   padding: 8px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.navbar nav ul {
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar nav ul li {
+.nav-links li {
   margin-right: 20px;
-  position: relative; /* Make logout and install button relative */
 }
 
-.navbar nav ul li a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
 }
 
-.navbar nav ul li a.active {
+.nav-links li a.active {
   font-weight: bold;
   border-bottom: 2px solid #fff;
 }
 
-.navbar nav ul li a:hover {
+.nav-links li a:hover {
   color: #ffe4b5;
 }
 
-/* Logout Button Style */
-.logout-button {
-  background: #ff6b6b;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s;
-  margin-right: 10px;
+.nav-buttons {
+  display: flex;
+  align-items: center;
 }
 
-.logout-button:hover {
-  background: #ff4757;
-}
-
-/* Install Button Style */
+.logout-button,
 .install-button {
   background: #42b983;
   color: white;
   border: none;
   padding: 10px 20px;
+  margin-left: 10px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
+}
+
+.logout-button {
+  background: #ff6b6b;
+}
+
+.logout-button:hover {
+  background: #ff4757;
 }
 
 .install-button:hover {
@@ -183,33 +182,27 @@ body {
 
 /* Mobile view adjustments */
 @media (max-width: 768px) {
-  .navbar {
-    height: 80px;
-    padding: 2px 15px;
-    display: flex;
+  .nav-content {
+    flex-direction: column;
     align-items: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
     justify-content: center;
   }
 
-  .navbar nav ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px 10px;
-    justify-items: center;
-    padding: 5px 0;
-  }
-
-  .navbar nav ul li a {
+  .logout-button,
+  .install-button {
+    margin: 5px;
+    padding: 8px 16px;
     font-size: 14px;
-    padding: 4px 8px;
-    white-space: nowrap;
-  }
-
-  .logout-button, .install-button {
-    top: 5px;
-    right: 10px;
-    padding: 4px 10px;
-    font-size: 12px;
   }
 }
 </style>
