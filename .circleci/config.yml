@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Deploy to EC2
           command: |
-            ssh $EC2_USERNAME@$EC2_PUBLIC_DNS "sudo rm -rf /home/ubuntu/frontend/* && sudo chown -R ubuntu:ubuntu /home/ubuntu/frontend"
+            ssh $EC2_USERNAME@$EC2_PUBLIC_DNS "sudo mkdir -p /home/ubuntu/frontend && sudo rm -rf /home/ubuntu/frontend/* && sudo chown -R ubuntu:ubuntu /home/ubuntu/frontend"
 
             scp -r dist/* $EC2_USERNAME@$EC2_PUBLIC_DNS:/home/ubuntu/frontend
 
