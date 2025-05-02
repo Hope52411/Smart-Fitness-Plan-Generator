@@ -1,3 +1,9 @@
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build-and-deploy-frontend
+
 version: 2.1
 
 executors:
@@ -41,9 +47,3 @@ jobs:
               sudo nginx -t
               sudo systemctl reload nginx
             EOF
-
-workflows:
-  version: 2
-  deploy:
-    jobs:
-      - build-and-deploy-frontend
