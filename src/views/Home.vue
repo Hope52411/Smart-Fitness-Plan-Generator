@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       selectedPart: null,
-      deferredPrompt: null, // Save install prompt event
+      deferredPrompt: null, 
     };
   },
   created() {
